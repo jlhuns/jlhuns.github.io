@@ -47,16 +47,14 @@ button {
   white-space: nowrap;
   z-index: 43;
 }
-.mask-group {
+.flex-row {
   position: relative;
   width: 1440px;
-  height: 661px;
+  height: 662px;
   margin: 21px 0 0 0;
-  z-index: 44;
-  /* -webkit-mask-image: url(./assets/images/cbd771d3-460c-4231-b03f-4dcd76733fa0.png);
-  -webkit-mask-size: cover; */
+  z-index: 46;
 }
-.walinghome-pic {
+.waling-home-pic {
   position: absolute;
   width: 764px;
   height: 661px;
@@ -65,25 +63,19 @@ button {
   background: url(./assets/images/walkinghome.png)
     no-repeat center;
   background-size: cover;
-  z-index: 45;
+  z-index: 44;
 }
-.banner-right-card {
+.black-rectangle {
   position: absolute;
-  width: 695px;
-  height: 661px;
-  top: 50%;
-  left: 759px;
-  transform: translate(0, -49.85%);
-  z-index: 46;
-}
-.frame {
-  position: relative;
-  width: 613px;
-  height: 423px;
-  margin: 120px 0 0 41px;
+  width: 678px;
+  height: 662px;
+  top: 0;
+  left: 762px;
   font-size: 0px;
-  z-index: 48;
-  overflow: visible auto;
+  background: url(./assets/images/blackgreySquare.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 46;
 }
 .title {
   display: flex;
@@ -92,20 +84,20 @@ button {
   position: relative;
   width: 613px;
   height: 137px;
-  margin: 0 0 0 0;
+  margin: 121px 0 0 38px;
   color: #ffffff;
   font-family: Poppins, var(--default-font-family);
   font-size: 48px;
   font-weight: 700;
   line-height: 65px;
   text-align: center;
-  z-index: 50;
+  z-index: 52;
 }
 .quote-author {
   display: block;
   position: relative;
   height: 27px;
-  margin: -9px 0 0 241px;
+  margin: -9px 0 0 279px;
   color: #ffffff;
   font-family: Poppins, var(--default-font-family);
   font-size: 18px;
@@ -113,23 +105,23 @@ button {
   line-height: 24px;
   text-align: left;
   white-space: nowrap;
-  z-index: 49;
+  z-index: 51;
 }
-.personalized-counseling {
+.text {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   position: relative;
   width: 529px;
   height: 84px;
-  margin: 55px 0 0 28px;
+  margin: 55px 0 0 66px;
   color: #c5bcbc;
   font-family: Poppins, var(--default-font-family);
   font-size: 36px;
   font-weight: 300;
   line-height: 42px;
   text-align: center;
-  z-index: 53;
+  z-index: 50;
 }
 .contact-me-button {
   display: flex;
@@ -138,12 +130,12 @@ button {
   gap: 10px;
   position: relative;
   width: 251px;
-  margin: 55px 0 0 167px;
+  margin: 55px 0 0 205px;
   padding: 25px 72px 25px 72px;
   background: #f4f4f4;
-  z-index: 51;
+  z-index: 48;
 }
-.contact-me {
+.text-1 {
   flex-shrink: 0;
   flex-basis: auto;
   position: relative;
@@ -156,24 +148,13 @@ button {
   text-align: left;
   text-transform: uppercase;
   white-space: nowrap;
-  z-index: 52;
+  z-index: 49;
 }
-.black-rectangle {
-  position: absolute;
-  width: 695px;
-  height: 661px;
-  top: 0;
-  left: 0;
-  background: url(./assets/images/blackgreySquare.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 47;
-}
-.gena-hunsaker-counseling-1 {
+.gena-hunsaker-counseling-2 {
   display: block;
   position: relative;
   height: 77px;
-  margin: 95px 0 0 227px;
+  margin: 94px 0 0 227px;
   color: #9b8f6f;
   font-family: Poppins, var(--default-font-family);
   font-size: 64px;
@@ -183,11 +164,63 @@ button {
   white-space: nowrap;
   z-index: 40;
 }
+.flex-row-d {
+  position: relative;
+  width: 1398px;
+  height: 760px;
+  margin: 32px 0 0 21px;
+  z-index: 39;
+}
+.gena-hunsaker-pic {
+  position: absolute;
+  width: 589px;
+  height: 760px;
+  top: 0;
+  left: 0;
+  background: url(./assets/images/genahPic.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 36;
+}
+.holistic-healing {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 832px;
+  height: 116px;
+  top: 39px;
+  right: 0;
+  color: #3a3a3a;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 57.6px;
+  text-align: center;
+  z-index: 39;
+}
+.trauma-informed-therapist {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  width: 735px;
+  height: 461px;
+  top: 217px;
+  left: 643px;
+  color: #3a3a3a;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 36px;
+  font-weight: 300;
+  line-height: 43.2px;
+  text-align: left;
+  z-index: 38;
+}
 .bg {
   position: relative;
   width: 1434px;
   height: 1603px;
-  margin: 930px 0 0 8px;
+  margin: 138px 0 0 8px;
   font-size: 0px;
   background: #ececec;
   z-index: 15;
@@ -207,7 +240,7 @@ button {
   white-space: nowrap;
   z-index: 34;
 }
-.subtitle {
+.contact-info {
   display: block;
   position: relative;
   height: 29px;
@@ -221,7 +254,7 @@ button {
   white-space: nowrap;
   z-index: 33;
 }
-.counseling-title {
+.gena-hunsaker-counseling-3 {
   display: block;
   position: relative;
   height: 43px;
@@ -235,7 +268,7 @@ button {
   white-space: nowrap;
   z-index: 30;
 }
-.counseling-subtitle {
+.mental-health-support {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -256,12 +289,12 @@ button {
   width: 1169px;
   height: 1px;
   margin: 23px 0 0 114.5px;
-  background: url(./assets/images/93369364-4bff-4eaa-b2d2-75a90878368f.png)
+  background: url(./assets/images/9f7361ae-afba-40d6-8a59-b0ad2e24748d.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 31;
 }
-.booking-title {
+.book-appointment {
   display: block;
   position: relative;
   height: 43px;
@@ -275,7 +308,7 @@ button {
   white-space: nowrap;
   z-index: 26;
 }
-.booking-subtitle {
+.contact-method {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -291,17 +324,17 @@ button {
   text-align: left;
   z-index: 25;
 }
-.line-2 {
+.line-4 {
   position: relative;
   width: 1169px;
   height: 1px;
   margin: 16px 0 0 104px;
-  background: url(./assets/images/8dded527-ae10-4265-91bf-eeaae4134875.png)
+  background: url(./assets/images/c2a41a5b-612f-4d9e-910d-72dff8309c6e.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 27;
 }
-.services-title {
+.counseling-services {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -317,7 +350,7 @@ button {
   text-align: left;
   z-index: 22;
 }
-.services-subtitle {
+.counseling-services-5 {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -335,17 +368,17 @@ button {
   z-index: 21;
   overflow: hidden;
 }
-.line-3 {
+.line-6 {
   position: relative;
   width: 1169px;
   height: 1px;
   margin: 7.5px 0 0 104px;
-  background: url(./assets/images/c9af4f3e-4f21-45d5-b815-ff4fab2167e9.png)
+  background: url(./assets/images/b2335857-4480-4579-88fb-a0f2ff5796cc.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 23;
 }
-.title-4 {
+.accepted-insurances {
   display: block;
   position: relative;
   height: 43px;
@@ -359,7 +392,7 @@ button {
   white-space: nowrap;
   z-index: 18;
 }
-.subtitle-5 {
+.accepted-insurances-7 {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -377,17 +410,17 @@ button {
   z-index: 17;
   overflow: hidden;
 }
-.line-6 {
+.line-8 {
   position: relative;
   width: 1169px;
   height: 1px;
   margin: 49.5px 0 0 98px;
-  background: url(./assets/images/76d9342f-1bb1-4505-876d-9fc63052dec3.png)
+  background: url(./assets/images/6860d995-a2cc-4181-8d4c-1ce91b76fd13.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 19;
 }
-.title-7 {
+.contact-me {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -404,7 +437,7 @@ button {
   white-space: nowrap;
   z-index: 13;
 }
-.subtitle-8 {
+.contact-me-9 {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -437,11 +470,52 @@ button {
   text-align: center;
   z-index: 12;
 }
+.flex-row-c {
+  position: relative;
+  width: 1433.384px;
+  height: 114.286px;
+  margin: 37.714px 0 0 -21px;
+  z-index: 11;
+}
+.phone {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 1426.384px;
+  height: 62.286px;
+  top: 0;
+  left: 0;
+  color: #5e5c5c;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.4px;
+  text-align: center;
+  z-index: 11;
+}
+.email {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 1426.384px;
+  height: 62.286px;
+  top: 52px;
+  left: 7px;
+  color: #5e5c5c;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.4px;
+  text-align: center;
+  z-index: 10;
+}
 .google-map-pic {
   position: relative;
   width: 1451px;
   height: 680px;
-  margin: 241.714px 0 0 2px;
+  margin: 89.714px 0 0 2px;
   background: url(./assets/images/googlephotomap.png)
     no-repeat center;
   background-size: cover;
@@ -458,7 +532,7 @@ button {
   z-index: 2;
   overflow: visible auto;
 }
-.copyright-text {
+.copyright {
   display: block;
   position: relative;
   height: 3.279px;
@@ -472,92 +546,13 @@ button {
   white-space: nowrap;
   z-index: 6;
 }
-.line-9 {
+.line-a {
   position: relative;
   width: 1249.487px;
   height: 1px;
   margin: 30.721px 0 0 123.94px;
-  background: url(./assets/images/79cec547-bda9-4ec1-8e09-cd6807bf323e.png)
+  background: url(./assets/images/023df0d2-1bfd-4003-8e25-bc2f0850a1b0.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 5;
-}
-.gena-hunsaker-pic {
-  position: absolute;
-  width: 589px;
-  height: 760px;
-  top: 965px;
-  left: 21px;
-  background: url(./assets/images/genahPic.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 36;
-}
-.holistic-healing-title {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  position: absolute;
-  width: 832px;
-  height: 116px;
-  top: 1004px;
-  right: 21px;
-  color: #3a3a3a;
-  font-family: Poppins, var(--default-font-family);
-  font-size: 48px;
-  font-weight: 500;
-  line-height: 57.6px;
-  text-align: center;
-  z-index: 39;
-}
-.holistic-healing-subtitle {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  position: absolute;
-  width: 735px;
-  height: 461px;
-  top: 1182px;
-  left: 664px;
-  color: #3a3a3a;
-  font-family: Poppins, var(--default-font-family);
-  font-size: 36px;
-  font-weight: 300;
-  line-height: 43.2px;
-  text-align: left;
-  z-index: 38;
-}
-.contact-phone {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  position: absolute;
-  width: 1426.384px;
-  height: 62.286px;
-  top: 3882px;
-  left: -21px;
-  color: #5e5c5c;
-  font-family: Poppins, var(--default-font-family);
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 38.4px;
-  text-align: center;
-  z-index: 11;
-}
-.contact-email {
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-  position: absolute;
-  width: 1426.384px;
-  height: 62.286px;
-  top: 3934px;
-  left: -14px;
-  color: #5e5c5c;
-  font-family: Poppins, var(--default-font-family);
-  font-size: 32px;
-  font-weight: 600;
-  line-height: 38.4px;
-  text-align: center;
-  z-index: 10;
 }
