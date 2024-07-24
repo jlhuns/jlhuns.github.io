@@ -53,8 +53,8 @@ button {
   height: 661px;
   margin: 21px 0 0 0;
   z-index: 44;
-  -webkit-mask-image: url(./assets/images/cbd771d3-460c-4231-b03f-4dcd76733fa0.png);
-  -webkit-mask-size: cover;
+  /* -webkit-mask-image: url(./assets/images/cbd771d3-460c-4231-b03f-4dcd76733fa0.png);
+  -webkit-mask-size: cover; */
 }
 .walinghome-pic {
   position: absolute;
