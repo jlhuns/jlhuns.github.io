@@ -53,7 +53,7 @@ button {
   height: 661px;
   margin: 21px 0 0 0;
   z-index: 44;
-  -webkit-mask-image: url(./assets/images/caafdc98-ffd9-4731-beb8-d7e4c186f092.png);
+  -webkit-mask-image: url(./assets/images/cbd771d3-460c-4231-b03f-4dcd76733fa0.png);
   -webkit-mask-size: cover;
 }
 .walinghome-pic {
@@ -164,7 +164,7 @@ button {
   height: 661px;
   top: 0;
   left: 0;
-  background: url(./assets/images/fce15dd6-c7ee-422d-b422-b2917ed29d97.png)
+  background: url(./assets/images/d4dcdb4f-fed4-4ce8-a83f-8f7d8f14fbf0.png)
     no-repeat center;
   background-size: cover;
   z-index: 47;
@@ -221,7 +221,7 @@ button {
   white-space: nowrap;
   z-index: 33;
 }
-.title-2 {
+.counseling-title {
   display: block;
   position: relative;
   height: 43px;
@@ -235,7 +235,7 @@ button {
   white-space: nowrap;
   z-index: 30;
 }
-.subtitle-3 {
+.counseling-subtitle {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -256,12 +256,12 @@ button {
   width: 1169px;
   height: 1px;
   margin: 23px 0 0 114.5px;
-  background: url(./assets/images/410bd670-c9f1-4bc6-a7dc-194f19f07d7b.png)
+  background: url(./assets/images/93369364-4bff-4eaa-b2d2-75a90878368f.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 31;
 }
-.title-4 {
+.booking-title {
   display: block;
   position: relative;
   height: 43px;
@@ -275,7 +275,7 @@ button {
   white-space: nowrap;
   z-index: 26;
 }
-.subtitle-5 {
+.booking-subtitle {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -291,17 +291,17 @@ button {
   text-align: left;
   z-index: 25;
 }
-.line-6 {
+.line-2 {
   position: relative;
   width: 1169px;
   height: 1px;
   margin: 16px 0 0 104px;
-  background: url(./assets/images/5dd8409b-1bab-42d9-9b77-06ea62d08f70.png)
+  background: url(./assets/images/8dded527-ae10-4265-91bf-eeaae4134875.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 27;
 }
-.title-7 {
+.services-title {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -317,7 +317,7 @@ button {
   text-align: left;
   z-index: 22;
 }
-.subtitle-8 {
+.services-subtitle {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -335,17 +335,17 @@ button {
   z-index: 21;
   overflow: hidden;
 }
-.line-9 {
+.line-3 {
   position: relative;
   width: 1169px;
   height: 1px;
   margin: 7.5px 0 0 104px;
-  background: url(./assets/images/8a351848-a00c-4788-8de9-4292b318ec0e.png)
+  background: url(./assets/images/c9af4f3e-4f21-45d5-b815-ff4fab2167e9.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 23;
 }
-.title-a {
+.title-4 {
   display: block;
   position: relative;
   height: 43px;
@@ -359,7 +359,7 @@ button {
   white-space: nowrap;
   z-index: 18;
 }
-.subtitle-b {
+.subtitle-5 {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -377,17 +377,17 @@ button {
   z-index: 17;
   overflow: hidden;
 }
-.line-c {
+.line-6 {
   position: relative;
   width: 1169px;
   height: 1px;
   margin: 49.5px 0 0 98px;
-  background: url(./assets/images/48f626da-96ec-4f28-94c1-5e965f8901fa.png)
+  background: url(./assets/images/76d9342f-1bb1-4505-876d-9fc63052dec3.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 19;
 }
-.title-d {
+.title-7 {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -404,7 +404,7 @@ button {
   white-space: nowrap;
   z-index: 13;
 }
-.subtitle-e {
+.subtitle-8 {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -458,7 +458,7 @@ button {
   z-index: 2;
   overflow: visible auto;
 }
-.copyright {
+.copyright-text {
   display: block;
   position: relative;
   height: 3.279px;
@@ -472,12 +472,12 @@ button {
   white-space: nowrap;
   z-index: 6;
 }
-.line-f {
+.line-9 {
   position: relative;
   width: 1249.487px;
   height: 1px;
   margin: 30.721px 0 0 123.94px;
-  background: url(./assets/images/78fb2115-3141-4059-9219-46265074b59e.png)
+  background: url(./assets/images/79cec547-bda9-4ec1-8e09-cd6807bf323e.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 5;
@@ -493,7 +493,7 @@ button {
   background-size: cover;
   z-index: 36;
 }
-.holistic-healing {
+.holistic-healing-title {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -510,7 +510,7 @@ button {
   text-align: center;
   z-index: 39;
 }
-.trauma-informed-therapist {
+.holistic-healing-subtitle {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
