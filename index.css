@@ -34,7 +34,7 @@ button {
   width: 1417px;
   height: 48px;
   margin: 16px 0 0 -30px;
-  z-index: 59;
+  z-index: 57;
 }
 .gena-hunsaker-counseling {
   display: flex;
@@ -52,7 +52,7 @@ button {
   line-height: 43.884px;
   text-align: center;
   white-space: nowrap;
-  z-index: 59;
+  z-index: 57;
 }
 .about-me {
   position: absolute;
@@ -67,7 +67,7 @@ button {
   text-align: center;
   text-overflow: initial;
   white-space: nowrap;
-  z-index: 55;
+  z-index: 53;
 }
 .about {
   position: relative;
@@ -103,7 +103,7 @@ button {
   line-height: 34.132px;
   text-align: center;
   white-space: nowrap;
-  z-index: 57;
+  z-index: 55;
 }
 .location {
   display: flex;
@@ -121,7 +121,7 @@ button {
   line-height: 34.132px;
   text-align: center;
   white-space: nowrap;
-  z-index: 58;
+  z-index: 56;
 }
 .contact-me {
   display: flex;
@@ -139,7 +139,7 @@ button {
   line-height: 34.132px;
   text-align: center;
   white-space: nowrap;
-  z-index: 56;
+  z-index: 54;
 }
 .frame {
   position: relative;
@@ -256,38 +256,16 @@ button {
   background-size: cover;
   z-index: 44;
 }
-.walinghome-pic {
+.photo-gallery {
   position: absolute;
   width: 740px;
   height: 896px;
   top: 2px;
-  left: 41px;
+  left: 39px;
   background: url(./assets/images/walkinghome.png)
     no-repeat center;
   background-size: cover;
   z-index: 51;
-}
-.arrow-removebg-preview {
-  position: absolute;
-  width: 76px;
-  height: 74px;
-  top: 436px;
-  left: 690px;
-  background: url(./assets/images/arrow-removebg.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 52;
-}
-.arrow-removebg-preview-2 {
-  position: absolute;
-  width: 76px;
-  height: 74px;
-  top: 436px;
-  left: 52px;
-  background: url(./assets/images/arrow-removebg.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 53;
 }
 .about-me-title {
   display: flex;
@@ -324,7 +302,7 @@ button {
   background-size: cover;
   z-index: 36;
 }
-.about-me-title-3 {
+.about-me-title-2 {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -410,7 +388,7 @@ button {
   white-space: nowrap;
   z-index: 30;
 }
-.question-4 {
+.question-3 {
   display: block;
   position: relative;
   height: 43px;
@@ -445,12 +423,12 @@ button {
   width: 1169px;
   height: 1px;
   margin: 16px 0 0 114px;
-  background: url(./assets/images/a4ce8d62-a65e-45fe-8903-9ec14d49f3e8.png)
+  background: url(./assets/images/0521e93e-e6f0-4a2b-b5a4-ebf90adc7883.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 27;
 }
-.counseling-services {
+.question-4 {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -466,7 +444,7 @@ button {
   text-align: left;
   z-index: 22;
 }
-.counseling-services-5 {
+.answer-5 {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -489,12 +467,12 @@ button {
   width: 1169px;
   height: 1px;
   margin: 10.5px 0 0 114px;
-  background: url(./assets/images/2d196ffe-528e-4400-ad53-f5114dba4ee8.png)
+  background: url(./assets/images/ba9c357f-7cfd-4316-9644-b4e85eca0e4e.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 23;
 }
-.accepted-insurances {
+.question-7 {
   display: block;
   position: relative;
   height: 43px;
@@ -508,7 +486,7 @@ button {
   white-space: nowrap;
   z-index: 18;
 }
-.accepted-insurances-7 {
+.answer-8 {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -526,17 +504,17 @@ button {
   z-index: 17;
   overflow: hidden;
 }
-.line-8 {
+.line-9 {
   position: relative;
   width: 1169px;
   height: 1px;
   margin: 49.5px 0 0 108px;
-  background: url(./assets/images/d70be458-c24e-4af2-b910-0c5eb71f4567.png)
+  background: url(./assets/images/2795217e-fecd-4520-84d0-0021c9a86933.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 19;
 }
-.about-me-9 {
+.answer-a {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -553,18 +531,18 @@ button {
   text-align: left;
   z-index: 29;
 }
-.line-a {
+.line-b {
   position: absolute;
   width: 80.96%;
   height: 0.06%;
   top: 18.47%;
   left: 8.59%;
-  background: url(./assets/images/9fc8392c-f941-45ff-a844-b256350cf6a7.png)
+  background: url(./assets/images/69bf8009-9bf4-4580-819d-2d43c931cb9f.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 31;
 }
-.contact-me-b {
+.title-c {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -581,7 +559,7 @@ button {
   white-space: nowrap;
   z-index: 13;
 }
-.subtitle {
+.gena-hunsaker-counseling-d {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -690,12 +668,12 @@ button {
   white-space: nowrap;
   z-index: 6;
 }
-.line-c {
+.line-e {
   position: relative;
   width: 1249.487px;
   height: 1px;
   margin: 30.721px 0 0 123.94px;
-  background: url(./assets/images/1fbfa589-5b3b-4fc2-930d-f17ab3c92af8.png)
+  background: url(./assets/images/3341e749-905d-4425-8755-01be55f51d6e.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 5;
