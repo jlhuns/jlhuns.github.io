@@ -258,7 +258,7 @@ button {
 }
 
 .carousel-container {
-  position: relative; /* Changed to relative to avoid overlapping */
+  position: absolute; /* Changed to relative to avoid overlapping */
   width: 740px;
   height: 896px;
   margin: auto; /* Center the carousel container */
