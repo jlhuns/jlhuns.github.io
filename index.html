@@ -33,43 +33,33 @@
         </a>
       </div>
 
-      <!-- Banner and Photo Gallery -->
-      <div class="frame">
-        <div class="banner-right-card">
-          <div class="banner-right-frame">
-            <span class="text">
-              Personalized counseling for career and life transitions
-            </span>
-            <div class="contact-me-button">
-              <span class="text-1">Contact Me</span>
+        <!-- Banner and Photo Gallery -->
+        <div class="frame">
+          <div class="banner-right-card">
+            <div class="banner-right-frame">
+              <span class="text">
+                Personalized counseling for career and life transitions
+              </span>
+              <div class="contact-me-button">
+                <span class="text-1">Contact Me</span>
+              </div>
+              <span class="title">“We’re all just walking each other home”</span>
+              <span class="quote-author">Ram Dass</span>
             </div>
-            <span class="title">“We’re all just walking each other home”</span>
-            <span class="quote-author">Ram Dass</span>
+            <div class="right-frame-black-rectangle"></div>
           </div>
-          <div class="right-frame-black-rectangle"></div>
+          <div class="carousel-container">
+            <div class="photo-gallery">
+              <div class="carousel-slide" style="background-image: url('./assets/images/walkinghome.png');"></div>
+              <div class="carousel-slide" style="background-image: url('./assets/images/building.png');"></div>
+              <div class="carousel-slide" style="background-image: url('./assets/images/waitingroom.png');"></div>
+              <div class="carousel-slide" style="background-image: url('./assets/images/office.png');"></div>
+              <div class="carousel-slide" style="background-image: url('./assets/images/LCSW.png');"></div>
+            </div>
+            <button class="arrow-left-circle" onclick="prevSlide()">&#10094;</button>
+            <button class="arrow-right-circle" onclick="nextSlide()">&#10095;</button>
+          </div>
         </div>
-        <div class="photo-gallery">
-          <div class="walinghome-pic"></div>
-        </div>
-        <div class="arrow-right-circle">
-          <div class="icon"></div>
-        </div>
-        <div class="arrow-left-circle">
-          <div class="icon-2"></div>
-        </div>
-      </div>
-
-      <!-- Carousel -->
-      <div class="carousel-container">
-        <div class="photo-gallery">
-          <div class="carousel-slide" style="background-image: url('./assets/images/walkinghome.png');"></div>
-          <div class="carousel-slide" style="background-image: url('./assets/images/building.png');"></div>
-          <div class="carousel-slide" style="background-image: url('./assets/images/waitingroom.png');"></div>
-          <div class="carousel-slide" style="background-image: url('./assets/images/office.png');"></div>
-          <div class="carousel-slide" style="background-image: url('./assets/images/LCSW.png');"></div>
-        </div>
-        <button class="arrow-left-circle" onclick="prevSlide()">&#10094;</button>
-        <button class="arrow-right-circle" onclick="nextSlide()">&#10095;</button>
       </div>
 
       <!-- About Me Section -->
@@ -174,26 +164,26 @@
         <div class="line-c"></div>
       </div>
     </div>
-    <!-- JavaScript for Carousel -->
-  <script>
-    let currentIndex = 0;
-    const slides = document.querySelectorAll('.photo-gallery .carousel-slide');
-    const totalSlides = slides.length;
+    <script>
+      // JavaScript for carousel functionality
+      let currentIndex = 0;
+      const slides = document.querySelectorAll('.carousel-slide');
+      const totalSlides = slides.length;
 
-    function showSlide(index) {
-      const offset = -index * 100;
-      document.querySelector('.photo-gallery').style.transform = `translateX(${offset}%)`;
-    }
+      function updateSlide() {
+        const offset = -currentIndex * 100;
+        document.querySelector('.photo-gallery').style.transform = `translateX(${offset}%)`;
+      }
 
-    function nextSlide() {
-      currentIndex = (currentIndex + 1) % totalSlides;
-      showSlide(currentIndex);
-    }
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % totalSlides;
+        updateSlide();
+      }
 
-    function prevSlide() {
-      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-      showSlide(currentIndex);
-    }
-  </script>
+      function prevSlide() {
+        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        updateSlide();
+      }
+    </script>
   </body>
 </html>

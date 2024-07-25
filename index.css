@@ -258,11 +258,10 @@ button {
 }
 
 .carousel-container {
-  position: absolute;
+  position: relative; /* Changed to relative to avoid overlapping */
   width: 740px;
   height: 896px;
-  top: 0;
-  left: 0;
+  margin: auto; /* Center the carousel container */
   z-index: 52;
 }
 
@@ -279,57 +278,32 @@ button {
   background-position: center;
 }
 
-.walinghome-pic {
+.arrow-right-circle, .arrow-left-circle {
   position: absolute;
-  width: 740px;
-  height: 896px;
-  top: 0;
-  left: 0;
-  background: url(./assets/images/walkinghome.png)
-    no-repeat center;
-  background-size: cover;
-  z-index: 52;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 53; /* Ensure the arrows are above other elements */
 }
+
 .arrow-right-circle {
-  position: absolute;
-  width: 48px;
-  height: 48px;
-  top: 426px;
-  left: 718px;
-  opacity: 0.8;
-  z-index: 53;
-  overflow: hidden;
+  right: 10px; /* Adjust positioning as needed */
 }
-.icon {
-  position: relative;
-  width: 44px;
-  height: 44px;
-  margin: 2px 0 0 2px;
-  background: url(./assets/images/arrow-removebg.png)
-    no-repeat center;
-  background-size: 100% 100%;
-  z-index: 54;
-}
+
 .arrow-left-circle {
-  position: absolute;
-  width: 48px;
-  height: 48px;
-  top: 429px;
-  left: 60px;
-  opacity: 0.8;
-  z-index: 55;
-  overflow: hidden;
+  left: 10px; /* Adjust positioning as needed */
 }
-.icon-2 {
-  position: relative;
-  width: 44px;
-  height: 44px;
-  margin: 2px 0 0 2px;
-  background: url(./assets/images/arrow-removebg.png)
-    no-repeat center;
-  background-size: 100% 100%;
-  transform: rotate(180deg);
-  z-index: 56;
+
+.icon, .icon-2 {
+  width: 24px; /* Adjust as necessary */
+  height: 24px; /* Adjust as necessary */
+  background: url(./assets/images/arrow-removebg.png) no-repeat center;
+  background-size: contain;
 }
 .about-me-title {
   display: flex;
