@@ -294,7 +294,6 @@ button {
   background: url(./assets/images/arrow-removebg.png)
     no-repeat center;
   background-size: 100% 100%;
-  transform: rotate(180deg);
   z-index: 54;
 }
 .arrow-left-circle {
@@ -315,6 +314,7 @@ button {
   background: url(./assets/images/arrow-removebg.png)
     no-repeat center;
   background-size: 100% 100%;
+  transform: rotate(180deg);
   z-index: 56;
 }
 .about-me-title {
