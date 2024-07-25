@@ -251,7 +251,7 @@ button {
   height: 896px;
   top: 0;
   left: 0;
-  background: url(./assets/images/be49e5af-44e9-4b72-a31a-643e460cc912.png)
+  background: url(./assets/images/blackgreySquare.png)
     no-repeat center;
   background-size: cover;
   z-index: 44;
@@ -271,7 +271,7 @@ button {
   height: 896px;
   top: 0;
   left: 0;
-  background: url(./assets/images/ef7c6d7904ad681ae40708e14219f7f36a77c5cf.png)
+  background: url(./assets/images/walkinghome.png)
     no-repeat center;
   background-size: cover;
   z-index: 52;
@@ -291,7 +291,7 @@ button {
   width: 44px;
   height: 44px;
   margin: 2px 0 0 2px;
-  background: url(./assets/images/dbe235e7-76b4-42eb-b9d8-f1a62c3358dd.png)
+  background: url(./assets/images/arrow-removebg.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 54;
@@ -311,7 +311,7 @@ button {
   width: 44px;
   height: 44px;
   margin: 2px 0 0 2px;
-  background: url(./assets/images/02e877c3-10c6-4dc7-bc8f-9b1712dfa3d9.png)
+  background: url(./assets/images/arrow-removebg.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 56;
@@ -346,7 +346,7 @@ button {
   height: 760px;
   top: 0;
   left: 0;
-  background: url(./assets/images/0f0b0fb10f644460f3038eb55a741196d0511c95.png)
+  background: url(./assets/images/genahPic.png)
     no-repeat center;
   background-size: cover;
   z-index: 36;
@@ -690,7 +690,7 @@ button {
   width: 1451px;
   height: 680px;
   margin: 89.714px 0 0 2px;
-  background: url(./assets/images/3ae70e5451915da33768b2913710123e4ff8c0f0.png)
+  background: url(./assets/images/googlephotomap.png)
     no-repeat center;
   background-size: cover;
   z-index: 7;
