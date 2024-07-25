@@ -34,7 +34,7 @@ button {
   width: 1417px;
   height: 48px;
   margin: 16px 0 0 -30px;
-  z-index: 47;
+  z-index: 59;
 }
 .gena-hunsaker-counseling {
   display: flex;
@@ -52,7 +52,7 @@ button {
   line-height: 43.884px;
   text-align: center;
   white-space: nowrap;
-  z-index: 47;
+  z-index: 59;
 }
 .about-me {
   position: absolute;
@@ -67,7 +67,7 @@ button {
   text-align: center;
   text-overflow: initial;
   white-space: nowrap;
-  z-index: 43;
+  z-index: 55;
 }
 .about {
   position: relative;
@@ -103,7 +103,7 @@ button {
   line-height: 34.132px;
   text-align: center;
   white-space: nowrap;
-  z-index: 45;
+  z-index: 57;
 }
 .location {
   display: flex;
@@ -121,7 +121,7 @@ button {
   line-height: 34.132px;
   text-align: center;
   white-space: nowrap;
-  z-index: 46;
+  z-index: 58;
 }
 .contact-me {
   display: flex;
@@ -139,7 +139,7 @@ button {
   line-height: 34.132px;
   text-align: center;
   white-space: nowrap;
-  z-index: 44;
+  z-index: 56;
 }
 .frame {
   position: relative;
@@ -147,7 +147,7 @@ button {
   height: 898px;
   margin: 12px 0 0 -41px;
   background: #ffffff;
-  z-index: 48;
+  z-index: 42;
   overflow: hidden;
 }
 .banner-right-card {
@@ -157,7 +157,7 @@ button {
   top: 50%;
   left: 779px;
   transform: translate(0, -49.89%);
-  z-index: 49;
+  z-index: 43;
 }
 .banner-right-frame {
   position: relative;
@@ -165,7 +165,7 @@ button {
   height: 549.717px;
   margin: 164.934px 0 0 38.889px;
   font-size: 0px;
-  z-index: 51;
+  z-index: 45;
   overflow: visible auto;
 }
 .text {
@@ -182,7 +182,7 @@ button {
   font-weight: 300;
   line-height: 42px;
   text-align: center;
-  z-index: 54;
+  z-index: 48;
 }
 .contact-me-button {
   display: flex;
@@ -194,7 +194,7 @@ button {
   margin: 74.97px 0 0 173.031px;
   padding: 25px 72px 25px 72px;
   background: #f4f4f4;
-  z-index: 52;
+  z-index: 46;
 }
 .text-1 {
   flex-shrink: 0;
@@ -209,7 +209,7 @@ button {
   text-align: left;
   text-transform: uppercase;
   white-space: nowrap;
-  z-index: 53;
+  z-index: 47;
 }
 .title {
   display: flex;
@@ -226,7 +226,7 @@ button {
   font-weight: 700;
   line-height: 65px;
   text-align: center;
-  z-index: 56;
+  z-index: 50;
 }
 .quote-author {
   display: flex;
@@ -243,7 +243,7 @@ button {
   font-weight: 500;
   line-height: 24px;
   text-align: left;
-  z-index: 55;
+  z-index: 49;
 }
 .right-frame-black-rectangle {
   position: absolute;
@@ -254,7 +254,7 @@ button {
   background: url(./assets/images/blackgreySquare.png)
     no-repeat center;
   background-size: cover;
-  z-index: 50;
+  z-index: 44;
 }
 .walinghome-pic {
   position: absolute;
@@ -265,7 +265,29 @@ button {
   background: url(./assets/images/walkinghome.png)
     no-repeat center;
   background-size: cover;
-  z-index: 57;
+  z-index: 51;
+}
+.arrow-removebg-preview {
+  position: absolute;
+  width: 76px;
+  height: 74px;
+  top: 436px;
+  left: 690px;
+  background: url(./assets/images/arrow-removebg.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 52;
+}
+.arrow-removebg-preview-2 {
+  position: absolute;
+  width: 76px;
+  height: 74px;
+  top: 436px;
+  left: 52px;
+  background: url(./assets/images/arrow-removebg.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 53;
 }
 .about-me-title {
   display: flex;
@@ -274,7 +296,7 @@ button {
   position: relative;
   width: 1440px;
   height: 77px;
-  margin: 5px 0 0 2px;
+  margin: 16px 0 0 0;
   color: #9b8f6f;
   font-family: Poppins, var(--default-font-family);
   font-size: 64px;
@@ -288,7 +310,7 @@ button {
   position: relative;
   width: 1398px;
   height: 760px;
-  margin: 32px 0 0 23px;
+  margin: 32px 0 0 21px;
   z-index: 39;
 }
 .gena-hunsaker-pic {
@@ -302,7 +324,7 @@ button {
   background-size: cover;
   z-index: 36;
 }
-.about-me-title-2 {
+.about-me-title-3 {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -340,7 +362,7 @@ button {
   position: relative;
   width: 1444px;
   height: 1603px;
-  margin: 15px 0 0 -2px;
+  margin: 18px 0 0 -4px;
   font-size: 0px;
   background: #ececec;
   z-index: 15;
@@ -388,7 +410,7 @@ button {
   white-space: nowrap;
   z-index: 30;
 }
-.question-3 {
+.question-4 {
   display: block;
   position: relative;
   height: 43px;
@@ -423,12 +445,12 @@ button {
   width: 1169px;
   height: 1px;
   margin: 16px 0 0 114px;
-  background: url(./assets/images/04146057-6883-4b66-865a-07fb4d86cbef.png)
+  background: url(./assets/images/a4ce8d62-a65e-45fe-8903-9ec14d49f3e8.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 27;
 }
-.question-4 {
+.counseling-services {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -444,7 +466,7 @@ button {
   text-align: left;
   z-index: 22;
 }
-.answer-5 {
+.counseling-services-5 {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -467,12 +489,12 @@ button {
   width: 1169px;
   height: 1px;
   margin: 10.5px 0 0 114px;
-  background: url(./assets/images/445895d4-0cc4-47ad-a60f-77a1d264fa14.png)
+  background: url(./assets/images/2d196ffe-528e-4400-ad53-f5114dba4ee8.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 23;
 }
-.question-7 {
+.accepted-insurances {
   display: block;
   position: relative;
   height: 43px;
@@ -486,7 +508,7 @@ button {
   white-space: nowrap;
   z-index: 18;
 }
-.answer-8 {
+.accepted-insurances-7 {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -504,17 +526,17 @@ button {
   z-index: 17;
   overflow: hidden;
 }
-.line-9 {
+.line-8 {
   position: relative;
   width: 1169px;
   height: 1px;
   margin: 49.5px 0 0 108px;
-  background: url(./assets/images/bd61d756-46ef-4d04-9551-d6559bbc5549.png)
+  background: url(./assets/images/d70be458-c24e-4af2-b910-0c5eb71f4567.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 19;
 }
-.answer-a {
+.about-me-9 {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -531,25 +553,25 @@ button {
   text-align: left;
   z-index: 29;
 }
-.line-b {
+.line-a {
   position: absolute;
   width: 80.96%;
   height: 0.06%;
   top: 18.47%;
   left: 8.59%;
-  background: url(./assets/images/f19d0df1-1c75-4188-812e-10788d819682.png)
+  background: url(./assets/images/9fc8392c-f941-45ff-a844-b256350cf6a7.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 31;
 }
-.title-c {
+.contact-me-b {
   display: flex;
   align-items: flex-start;
   justify-content: center;
   position: relative;
   width: 528.208px;
   height: 78.677px;
-  margin: 121px 0 0 428px;
+  margin: 107px 0 0 428px;
   color: #3a3a3a;
   font-family: Poppins, var(--default-font-family);
   font-size: 48px;
@@ -559,7 +581,7 @@ button {
   white-space: nowrap;
   z-index: 13;
 }
-.gena-hunsaker-counseling-d {
+.subtitle {
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -668,12 +690,12 @@ button {
   white-space: nowrap;
   z-index: 6;
 }
-.line-e {
+.line-c {
   position: relative;
   width: 1249.487px;
   height: 1px;
   margin: 30.721px 0 0 123.94px;
-  background: url(./assets/images/c6402f7e-709f-4b14-acac-b84630c07072.png)
+  background: url(./assets/images/1fbfa589-5b3b-4fc2-930d-f17ab3c92af8.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 5;
