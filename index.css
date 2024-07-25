@@ -251,22 +251,21 @@ button {
   height: 896px;
   top: 0;
   left: 0;
-  background: url(./assets/images/blackgreySquare.png)
+  background: url(./assets/images/125817cc-ab41-4dc4-875d-523dac12238e.png)
     no-repeat center;
   background-size: cover;
   z-index: 44;
 }
-.photogallery-frame {
+.photo-gallery {
   position: absolute;
   width: 740px;
   height: 896px;
   top: 2px;
-  left: 41px;
-  background: url(./assets/images/walkinghome.png)
+  left: 39px;
+  background: url(./assets/images/c6b244a2-711b-4b3a-9701-87c7e0ad8269.png)
     no-repeat center;
   background-size: cover;
   z-index: 51;
-  overflow: hidden;
 }
 .about-me-title {
   display: flex;
@@ -298,7 +297,7 @@ button {
   height: 760px;
   top: 0;
   left: 0;
-  background: url(./assets/images/genahPic.png)
+  background: url(./assets/images/0f0b0fb10f644460f3038eb55a741196d0511c95.png)
     no-repeat center;
   background-size: cover;
   z-index: 36;
@@ -424,7 +423,7 @@ button {
   width: 1169px;
   height: 1px;
   margin: 16px 0 0 114px;
-  background: url(./assets/images/8f6b7733-61ea-4796-9522-23f7c02ecd77.png)
+  background: url(./assets/images/0521e93e-e6f0-4a2b-b5a4-ebf90adc7883.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 27;
@@ -468,7 +467,7 @@ button {
   width: 1169px;
   height: 1px;
   margin: 10.5px 0 0 114px;
-  background: url(./assets/images/f2c10c3b-c435-454a-823c-4eaf59e409b9.png)
+  background: url(./assets/images/ba9c357f-7cfd-4316-9644-b4e85eca0e4e.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 23;
@@ -510,7 +509,7 @@ button {
   width: 1169px;
   height: 1px;
   margin: 49.5px 0 0 108px;
-  background: url(./assets/images/174c2d7e-a3d4-48ab-a3be-2e7624aae2a7.png)
+  background: url(./assets/images/2795217e-fecd-4520-84d0-0021c9a86933.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 19;
@@ -538,7 +537,7 @@ button {
   height: 0.06%;
   top: 18.47%;
   left: 8.59%;
-  background: url(./assets/images/b60fbbe8-d679-45f1-99a7-90b5d062a040.png)
+  background: url(./assets/images/69bf8009-9bf4-4580-819d-2d43c931cb9f.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 31;
@@ -639,7 +638,7 @@ button {
   width: 1451px;
   height: 680px;
   margin: 89.714px 0 0 2px;
-  background: url(./assets/images/googlephotomap.png)
+  background: url(./assets/images/3ae70e5451915da33768b2913710123e4ff8c0f0.png)
     no-repeat center;
   background-size: cover;
   z-index: 7;
@@ -674,7 +673,7 @@ button {
   width: 1249.487px;
   height: 1px;
   margin: 30.721px 0 0 123.94px;
-  background: url(./assets/images/bcce742d-70d9-4cb4-802c-89db0d485c91.png)
+  background: url(./assets/images/3341e749-905d-4425-8755-01be55f51d6e.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 5;
