@@ -256,15 +256,27 @@ button {
   background-size: cover;
   z-index: 44;
 }
-.photo-gallery {
-  position: absolute;
+
+.carousel-container {
+  position: relative;
   width: 740px;
   height: 896px;
-  top: 50%;
-  left: 39px;
-  transform: translate(0, -49.89%);
-  z-index: 51;
+  overflow: hidden;
 }
+
+.photo-gallery {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.photo-gallery .carousel-slide {
+  min-width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
 .walinghome-pic {
   position: absolute;
   width: 740px;
