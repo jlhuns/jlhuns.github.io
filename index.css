@@ -267,6 +267,29 @@ button {
   background-size: cover;
   z-index: 51;
 }
+.left-arrow {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 436px;
+  left: 126px;
+  background: url(./assets/images/arrow-removebg.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 52;
+}
+.right-arrow{
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  top: 436px;
+  left: 688px;
+  background: url(./assets/images/arrow-removebg.png)
+    no-repeat center;
+  background-size: cover;
+  transform: rotate(180deg);
+  z-index: 52;
+}
 .about-me-title {
   display: flex;
   align-items: flex-start;
