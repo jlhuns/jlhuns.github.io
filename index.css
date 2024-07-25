@@ -276,7 +276,7 @@ button {
   background: url(./assets/images/arrow-removebg.png)
     no-repeat center;
   background-size: cover;
-  z-index: 52;
+  z-index: 100;
 }
 .right-arrow{
   position: absolute;
@@ -288,7 +288,7 @@ button {
     no-repeat center;
   background-size: cover;
   transform: rotate(180deg);
-  z-index: 52;
+  z-index: 100;
 }
 .about-me-title {
   display: flex;
