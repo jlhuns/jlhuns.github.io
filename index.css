@@ -251,7 +251,7 @@ button {
   height: 896px;
   top: 0;
   left: 0;
-  background: url(./assets/images/125817cc-ab41-4dc4-875d-523dac12238e.png)
+  background: url(./assets/images/blackgreySquare.png)
     no-repeat center;
   background-size: cover;
   z-index: 44;
@@ -262,7 +262,7 @@ button {
   height: 896px;
   top: 2px;
   left: 39px;
-  background: url(./assets/images/c6b244a2-711b-4b3a-9701-87c7e0ad8269.png)
+  background: url(./assets/images/walkinghome.png)
     no-repeat center;
   background-size: cover;
   z-index: 51;
@@ -297,7 +297,7 @@ button {
   height: 760px;
   top: 0;
   left: 0;
-  background: url(./assets/images/0f0b0fb10f644460f3038eb55a741196d0511c95.png)
+  background: url(./assets/images/genahPic.png)
     no-repeat center;
   background-size: cover;
   z-index: 36;
@@ -638,7 +638,7 @@ button {
   width: 1451px;
   height: 680px;
   margin: 89.714px 0 0 2px;
-  background: url(./assets/images/3ae70e5451915da33768b2913710123e4ff8c0f0.png)
+  background: url(./assets/images/googlephotomap.png)
     no-repeat center;
   background-size: cover;
   z-index: 7;
