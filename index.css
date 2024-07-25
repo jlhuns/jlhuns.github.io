@@ -29,7 +29,7 @@ button {
   background: #ffffff;
   overflow: hidden;
 }
-.flex-row-ea {
+.flex-row-fca {
   position: relative;
   width: 1417px;
   height: 48px;
@@ -163,7 +163,7 @@ button {
   position: relative;
   width: 635.136px;
   height: 549.717px;
-  margin: 164.933px 0 0 38.889px;
+  margin: 164.934px 0 0 38.889px;
   font-size: 0px;
   z-index: 51;
   overflow: visible auto;
@@ -258,10 +258,10 @@ button {
 }
 .walinghome-pic {
   position: absolute;
-  width: 791.589px;
-  height: 901px;
+  width: 740px;
+  height: 896px;
   top: 2px;
-  left: -11px;
+  left: 41px;
   background: url(./assets/images/walkinghome.png)
     no-repeat center;
   background-size: cover;
@@ -284,7 +284,7 @@ button {
   white-space: nowrap;
   z-index: 40;
 }
-.flex-row-d {
+.flex-row-cbc {
   position: relative;
   width: 1398px;
   height: 760px;
@@ -423,7 +423,7 @@ button {
   width: 1169px;
   height: 1px;
   margin: 16px 0 0 114px;
-  background: url(./assets/images/31fab324-492f-4cce-b769-bbae6125e83f.png)
+  background: url(./assets/images/04146057-6883-4b66-865a-07fb4d86cbef.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 27;
@@ -467,7 +467,7 @@ button {
   width: 1169px;
   height: 1px;
   margin: 10.5px 0 0 114px;
-  background: url(./assets/images/7b8808d6-1b72-4bbe-a024-298dbde5c074.png)
+  background: url(./assets/images/445895d4-0cc4-47ad-a60f-77a1d264fa14.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 23;
@@ -509,7 +509,7 @@ button {
   width: 1169px;
   height: 1px;
   margin: 49.5px 0 0 108px;
-  background: url(./assets/images/36085572-c5e2-458c-8a7c-fe4fa1002abc.png)
+  background: url(./assets/images/bd61d756-46ef-4d04-9551-d6559bbc5549.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 19;
@@ -537,7 +537,7 @@ button {
   height: 0.06%;
   top: 18.47%;
   left: 8.59%;
-  background: url(./assets/images/02b15530-2607-4983-8ebc-94138f554fbf.png)
+  background: url(./assets/images/f19d0df1-1c75-4188-812e-10788d819682.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 31;
@@ -592,7 +592,7 @@ button {
   text-align: center;
   z-index: 11;
 }
-.flex-row-c {
+.flex-row-db {
   position: relative;
   width: 1433.384px;
   height: 114.286px;
@@ -673,7 +673,7 @@ button {
   width: 1249.487px;
   height: 1px;
   margin: 30.721px 0 0 123.94px;
-  background: url(./assets/images/9be68b0a-8c6d-42ea-9189-6ee6dff24d81.png)
+  background: url(./assets/images/c6402f7e-709f-4b14-acac-b84630c07072.png)
     no-repeat center;
   background-size: 100% 100%;
   z-index: 5;
