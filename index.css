@@ -46,6 +46,7 @@ button {
 
 .main-container {
   margin: auto;
+  height: auto;
   background: #ffffff;
   overflow: hidden;
 }
@@ -137,10 +138,10 @@ button {
   align-items: flex-start;
   justify-content: center;
   position: absolute;
-  width: 550px;
-  height: 42px;
+  width: 200px;
+  height: 50px;
   top: 3px;
-  left: 801px;
+  left: 1000px;
   color: #413f3f;
   font-family: Montserrat, var(--default-font-family);
   font-size: 28px;
