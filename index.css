@@ -302,7 +302,7 @@ float: left;
   transition: all 150ms ease;
 }
 #slider #prev {
-  left: 50px;
+  left: 10px;
 }
 #slider #next {
   right: 10px;
