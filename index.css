@@ -303,7 +303,8 @@ button {
 
 #slider {
   position: relative;
-  width: 775px;
+  width: 100%; /* Change to 100% for responsiveness */
+  max-width: 775px; /* Ensure it doesn't exceed the original width */
   height: 896px;
   overflow: hidden;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
