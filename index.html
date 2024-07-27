@@ -48,16 +48,14 @@
             </div>
             <div class="right-frame-black-rectangle"></div>
           </div>
-          <div class="carousel-container">
-            <div class="photo-gallery">
-              <div class="carousel-slide" style="background-image: url('./assets/images/walkinghome.png');"></div>
-              <div class="carousel-slide" style="background-image: url('./assets/images/building.png');"></div>
-              <div class="carousel-slide" style="background-image: url('./assets/images/waitingroom.png');"></div>
-              <div class="carousel-slide" style="background-image: url('./assets/images/office.png');"></div>
-              <div class="carousel-slide" style="background-image: url('./assets/images/LCSW.png');"></div>
-            </div>
-            <button class="arrow-left-circle" onclick="prevSlide()">&#10094;</button>
-            <button class="arrow-right-circle" onclick="nextSlide()">&#10095;</button>
+            <div id = "slider">
+              <ul id="slideWrap"> 
+                  <li><img src="assets/images/walkinghome.png" alt=""></li>
+                  <li><img src="assets/images/LCSW.png" alt=""></li>
+                  <li><img src="assets/images/building.png" alt=""></li>
+              </ul>
+              <a id="prev" href="#photos">&#8810;</a>
+              <a id="next" href="#photos">&#8811;</a>
           </div>
         </div>
       </div>
@@ -167,25 +165,50 @@
       </div>
     </div>
     <script>
-      // JavaScript for carousel functionality
-      let currentIndex = 0;
-      const slides = document.querySelectorAll('.carousel-slide');
-      const totalSlides = slides.length;
+      var slider = document.getElementById("slider");
+      var sliderWidth = slider.offsetWidth;
+      var slideList = document.getElementById("slideWrap");
+      var count = 1;
+      var items = slideList.querySelectorAll("li").length;
+      var prev = document.getElementById("prev");
+      var next = document.getElementById("next");
 
-      function updateSlide() {
-        const offset = -currentIndex * 100;
-        document.querySelector('.photo-gallery').style.transform = `translateX(${offset}%)`;
+      window.addEventListener('resize', function() {
+        sliderWidth = slider.offsetWidth;
+      });
+      var prevSlide = function() {
+          if(count > 1) {
+            count = count - 2;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+        
+          else if(count = 1) {
+            count = items - 1;
+            slideList.style.left = "-" + count * sliderWidth + "px";
+            count++;
+          }
+        };
+      var nextSlide = function() {
+      if(count < items) {
+          slideList.style.left = "-" + count * sliderWidth + "px";
+          count++;
       }
-
-      function nextSlide() {
-        currentIndex = (currentIndex + 1) % totalSlides;
-        updateSlide();
+      else if(count = items) {
+          slideList.style.left = "0px";
+          count = 1;
       }
-
-      function prevSlide() {
-        currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-        updateSlide();
-      }
+      };
+      next.addEventListener("click", function() {
+          nextSlide();
+        });
+        
+      prev.addEventListener("click", function() {
+      prevSlide();
+      });
+      // setInterval(function() {
+      //     nextSlide()
+      //   }, 5000);
     </script>
   </body>
 </html>
