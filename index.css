@@ -9,8 +9,24 @@ body{
   margin: 0 auto;
   max-width: fit-content;
 }
+ 
 
-
+/* #about-me {
+  border: 2px solid red;
+  background-color: lightyellow;
+}
+#faq {
+  border: 2px solid blue;
+  background-color: lightblue;
+}
+#contact-me {
+  border: 2px solid green;
+  background-color: lightgreen;
+}
+#location {
+  border: 2px solid orange;
+  background-color: lightcoral;
+} */
 
 .main-container {
   overflow: hidden;
@@ -369,7 +385,7 @@ float: left;
   height: 760px;
   top: 0;
   left: 0;
-  background: url(./assets/images/genahPic.png)
+  background: url(./assets/images/gena3.png)
     no-repeat center;
   background-size: cover;
   z-index: 36;
