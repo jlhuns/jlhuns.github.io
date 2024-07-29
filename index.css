@@ -215,8 +215,7 @@ body{
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
-  margin-top: auto;
-  margin-bottom: auto; /* Adjusted margin for consistency */
+  margin-top: 10%; /* Adjusted margin for consistency */
 }
 
 .contact-me-button:hover {
