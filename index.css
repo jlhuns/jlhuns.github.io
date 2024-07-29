@@ -35,62 +35,71 @@ body{
 /* topbanner */
 .navbar {
   display: flex;
-  justify-content: space-around;
+  justify-content: center; /* Space out items for a more professional look */
   align-items: center;
   width: 100%;
-  height: 10%;
-  background-color: #617c7c;
+  padding: 10px 20px; /* Add padding for better spacing */
+  background-color: #334e4e; /* Darker background for a more professional look */
   position: fixed; /* Make navbar fixed */
   top: 0; /* Stick to the top */
   left: 0; /* Align to the left edge */
   z-index: 1000; /* Ensure it stays above other content */
-  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
 }
-
-.nav-item {
-    font-family: Montserrat, var(--default-font-family);
-    font-size: 28px;
-    color: rgb(213, 212, 212);
-    padding: 10px 20px;
-    text-align: center;
-    line-height: 40px; 
-}
-
 .website-title {
-  display: flex;
+  padding-right: 15%;
   font-family: Montserrat, var(--default-font-family);
-  font-size: 40px;
+  font-size: 30px; /* Adjust font size for better balance */
   font-weight: 700;
-  color: rgb(243, 241, 241);
-  padding: 10px;
+  color: #ffffff; /* White color for contrast */
+  text-transform: uppercase; /* Uppercase for a professional look */
+  letter-spacing: 1px; /* Add letter spacing for readability */
+  
+}
+.nav-item {
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 18px; /* Adjust font size */
+  color: #ffffff; /* White color for contrast */
+  padding: 10px 15px; /* Add padding for better spacing */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s, background-color 0.3s; /* Smooth transition effects */
+}
+.nav-item:hover {
+  color: #ffcc00; /* Yellow color on hover */
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle background on hover */
+  border-radius: 5px; /* Rounded corners on hover */
+}
+.nav-container {
+  padding-left: 5%;
+  padding-right: 10%;
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Add gap between nav items */
 }
 .main-container {
-  width: 80%;
+  width: 85%;
   height: 0 auto;
   align-items: center;
   position: absolute;
-  margin: 12% auto 0;
+  margin: 4% auto 0;
   color:#f2eeee;
 }
 
-/* slider and right-frame container */
+/* Container for slider and right-frame */
 .content-container {
   display: flex;
-  align-items: flex-start;
-  align-items: stretch;
   flex-direction: row;
   width: 100%;
+  align-items: stretch; /* Ensure both items stretch to the container's height */
 }
 
-/* slider */
+/* Slider styles */
 .slider {
-  flex: 1;
-  align-items: center;
+  flex: 1.5; /* Adjusted for more emphasis on slider */
   position: relative;
-  width: 100%;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly more pronounced shadow */
 }
 
 .slides {
@@ -99,28 +108,31 @@ body{
 }
 
 .slide {
-  min-width: 100%;
+  flex: 1 0 100%; /* Ensures slides take full width of the slider */
   box-sizing: border-box;
-  height: auto; 
 }
 
 .slide img {
   width: 100%;
+  height: auto;
   display: block;
+  border-radius: 10px; /* Match the slider's border-radius */
 }
 
+/* Navigation buttons */
 .prev, .next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly lighter background for visibility */
+  color: #ffffff;
   border: none;
-  padding: 25px;
+  padding: 15px; /* Reduced padding for a more compact button */
   cursor: pointer;
   border-radius: 50%;
   z-index: 100;
   font-size: 24px;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .prev {
@@ -131,261 +143,309 @@ body{
   right: 10px;
 }
 
-  /* rightbanner */
-  .right-frame {
-    flex: 1; /* Adjust this value to control the width ratio */
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    position: relative;
-    justify-content: flex-start;
-    border-radius: 10px;
-    background-color: rgb(42, 66, 66);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  .quote {
-    color: #ffffff;
-    font-family: Poppins, var(--default-font-family);
-    font-size: 40px;
-    font-weight: 500;
-    text-align: center;
-    margin-top:auto;
-  }
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
 
-  .author {
-    color: #ffffff;
-    font-family: Poppins, var(--default-font-family);
-    font-size: 10px;
-    font-weight: 500;
-    line-height: 32px;
-    text-align: center;
-  }
+.prev:active, .next:active {
+  background-color: rgba(0, 0, 0, 1); /* Darker on click */
+  transform: scale(0.95); /* Slightly reduce size on click */
+}
 
-  .right-frame-text{
+/* Right frame styles */
+.right-frame {
+  flex: 1; /* Adjust this value to control the width ratio */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content vertically */
+  background-color: #2a4242; /* Darker background for contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly more pronounced shadow */
+  padding: 20px; /* Added padding for better spacing */
+  color: #ffffff; /* White text color for contrast */
+}
+
+/* Quote text styling */
+.quote {
+  font-family: Poppins, var(--default-font-family);
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 20px; /* Space below quote */
+  margin-top: 20%;
+}
+
+/* Author text styling */
+.author {
+  font-family: Poppins, var(--default-font-family);
+  font-size: 16px; /* Increased font size for readability */
+  font-weight: 400; /* Slightly lighter weight for differentiation */
+  line-height: 1.5; /* Improved line height for readability */
+  text-align: center;
+  margin-bottom: 20px; /* Space below author */
+}
+
+/* Additional text styling in right frame */
+.right-frame-text {
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 24px;
+  font-weight: 400; /* Slightly lighter weight for body text */
+  line-height: 1.5; /* Improved line height for readability */
+  text-align: center;
+  margin: 0 auto 20px; /* Center text and add space below */
+  max-width: 80%; /* Limit width for better readability */
+  margin-top:auto;
+  margin-top: 50%;
+}
+
+/* Contact me button styling */
+.contact-me-button {
+  display: inline-block;
+  padding: 20px 40px;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  margin-top: auto;
+  margin-bottom: auto; /* Adjusted margin for consistency */
+}
+
+.contact-me-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.contact-me-button:active {
+  background-color: #004080;
+  transform: scale(0.95);
+}
+
+/* Container for About Me section */
+.about-me-container {
+  max-width: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  background-color: #617c7c; /* Soft teal background */
+  padding: 2% 5%; /* Added padding for better spacing */
+  box-sizing: border-box; /* Ensure padding and borders are included in element's total width and height */
+  margin: 0 auto; /* Center container horizontally */
+}
+
+/* Title of the About Me section */
+.about-me-title {
+  color: #ffffff; /* White text for better contrast */
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.2; /* Improved line height for better readability */
+  text-align: center;
+  background-color: #2a4242; /* Darker background for the title */
+  padding: 20px; /* Consistent padding */
+  border-radius: 8px; /* Rounded corners for a more modern look */
+  margin-bottom: 20px; /* Space below title */
+}
+
+/* Container for content inside About Me section */
+.about-me-content-stack {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+  gap: 20px; /* Added gap between items for better spacing */
+}
+
+/* Container for the picture */
+.about-me-picture {
+  flex: 1; /* Take up available space */
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow for a more pronounced effect */
+}
+
+/* Styling for images within the picture container */
+.about-me-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Title text within the content stack */
+.about-me-text-title {
+  flex: 1;
+  color: #ffffff;
+  font-family: Poppins, var(--default-font-family);
+  font-size: 50px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 10%; /* Top margin for spacing */
+  margin-bottom: 20px; /* Bottom margin for spacing */
+}
+
+/* Body text within the content stack */
+.about-me-text {
+  color: #c7c7c7d2; /* Light grey text for better readability */
+  font-family: Montserrat, var(--default-font-family);
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1.5; /* Improved line height for better readability */
+  text-align: center;
+  margin: 0 auto; /* Center text horizontally */
+  max-width: 800px; /* Limit the width for better readability */
+  padding: 0 10%; /* Add horizontal padding for spacing */
+}
+
+
+.faq-content {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 26px;
+}
+
+.faq-title {
     color: #ffffff;
     font-family: Montserrat, var(--default-font-family);
-    margin-inline: 10%;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    background-color: #2a4242;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.faq-subtitle {
+    color: #ffffff;
+    font-family: Montserrat, var(--default-font-family);
     font-size: 24px;
     font-weight: 500;
-    line-height: 32px;
     text-align: center;
-    margin-top:auto;
-  }
+    margin: 10px 0 20px;
+}
 
-  .contact-me-button {
-    display: inline-block; /* Allow margin and padding */
-    padding: 10px 20px; /* Add padding inside the button */
-    font-family: Poppins, var(--default-font-family); /* Font style */
-    font-size: 16px; /* Font size */
-    font-weight: 500; /* Font weight */
-    color: #ffffff; /* Text color */
-    background-color: #007bff; /* Background color */
-    border: none; /* Remove border */
-    border-radius: 5px; /* Rounded corners */
-    text-align: center; /* Center text */
-    text-decoration: none; /* Remove underline from links */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
-    margin-top: auto;
-    margin-bottom: 40%;
-  }
-  
-  .contact-me-button:hover {
-    background-color: #0056b3; /* Darker background on hover */
-    transform: scale(1.05); /* Slightly larger on hover */
-  }
-  
-  .contact-me-button:active {
-    background-color: #004080; /* Even darker background on click */
-    transform: scale(0.95); /* Slightly smaller on click */
-  }
+.faq-item {
+    margin-bottom: 20px;
+}
 
-  .about-me-container{
-    display: flex;
-    align-items: flex-start;
-    align-items: stretch;
-    flex-direction: column;
+.faq-question {
     width: 100%;
-    background-color: #617c7c;
-    margin: 2% auto 0;
-  }
-
-  .about-me-title{
-    color: #ffffff;
-    font-family: Montserrat, var(--default-font-family);
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 32px;
-    text-align: center;
-    margin-top:auto;
-    padding: 1%;
-    background-color: #2a4242;
-  }
-  .about-me-content-stack{
-    display: flex;
-    align-items: stretch;
-    flex-direction: row;
-  }
-
-  .about-me-picture {
-    flex: 1;
-    align-items: center;
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .about-me-picture img {
-    width: 100%; /* Make the image responsive */
-    height: 100%; /* Ensure the image fills its container */
-    object-fit: cover; /* Maintain aspect ratio while filling the container */
-  }
-  .about-me-text-title{
-    flex:1;
-    color: #ffffff;
-    font-family: Poppins, var(--default-font-family);
-    font-size: 50px;
-    font-weight: 500;
-    text-align: center;
-    margin-bottom:auto;
-    margin-top: 10%;
-  }
-  .about-me-text {
-    color: #c7c7c7d2;
-    font-family: Montserrat, var(--default-font-family);
-    margin-inline: 10%;
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 32px;
-    text-align: center;
-    margin-top:auto;
-    margin-bottom: 5%;
-  }
-
-  .faq-content {
-    max-width: 100%;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .faq-title {
-    color: #ffffff;
-    font-family: Montserrat, var(--default-font-family);
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 32px;
-    text-align: center;
-    margin-top:auto;
-    padding: 1%;
-    background-color: #2a4242;
-    margin-top: 2%;
-    margin-bottom: 1%;
-  }
-  .faq-subtitle {
-    color: #ffffff;
-    font-family: Montserrat, var(--default-font-family);
-    font-size: 26px;
-    font-weight: 500;
-    line-height: 32px;
-    text-align: center;
-    margin-top: 1%;
-  }
-  
-  .faq-item {
-    margin-bottom: 10px;
-  }
-  
-  .faq-question {
-    width: 100%;
-    padding: 1%;
+    padding: 15px;
     text-align: left;
     background-color: #225e5e;
     border: none;
     cursor: pointer;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
-  }
-  .faq-answer {
+    color: #ffffff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #1a4a4a;
+}
+
+.faq-answer {
     display: none;
-    padding: 10px;
+    padding: 15px;
     border-top: 1px solid #ccc;
     background-color: #617c7c;
     transition: max-height 0.3s ease-out, padding 0.3s ease-out;
     max-height: 0;
     overflow: hidden;
-    font-size: 24px;
-  }
-  .faq-answer.show {
-    display: block;
-    max-height: 100%; /* adjust as needed */
-    padding: 10px;
-  }
-
-  .contact-me-container{
-    display: flex;
-    align-items: flex-start;
-    align-items: stretch;
-    flex-direction: column;
-    width: 100%;
-    background-color: #617c7c;
-    margin: 5% auto 0;
-  }
-
-  .contact-me-title{
+    font-size: 18px;
     color: #ffffff;
-    font-family: Montserrat, var(--default-font-family);
-    font-size: 48px;
-    font-weight: 500;
-    line-height: 32px;
-    text-align: center;
-    margin-top:auto;
-    padding: 1%;
-    background-color: #2a4242;
-  }
-  .contact-me-content-stack{
-    display: flex;
-    align-items: stretch;
-    flex-direction: row;
-  }
+    border-radius: 0 0 5px 5px;
+}
 
-  .contact-me-picture {
-    flex: 1;
+.faq-answer.show {
+    display: block;
+    max-height: 100%;
+    padding: 15px;
+}
+
+  .contact-me-container {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    position: relative;
-    width: 100%;
-    overflow: hidden;
+    width: 85%;
+    background-color: #334e4e;
+    margin: 5% auto;
+    padding: 2%;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .contact-me-picture img {
-    width: 100%; /* Make the image responsive */
-    height: 100%; /* Ensure the image fills its container */
-    object-fit: cover; /* Maintain aspect ratio while filling the container */
-  }
-  .contact-me-text-title{
+}
+.contact-me-title {
+    color: #ffffff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #2a4242;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.contact-me-content-stack {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contact-me-text {
+    color: #c7c7c7;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: left;
+    margin: 0 20px;
+    flex: 1;
+}
+.contact-me-text-title {
     color: #ffffff;
     font-family: Poppins, var(--default-font-family);
-    font-size: 50px;
+    font-size: 24px;
     font-weight: 500;
     text-align: center;
-    margin-bottom:auto;
-    margin-top: 10%;
-  }
-  .contact-me-text {
-    flex:1;
-    color: #c7c7c7d2;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.contact-me-text a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+.contact-me-text a:hover {
+    text-decoration: underline;
+}
+  .footer {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #2a4242;
+    color: #ffffff;
+    text-align: center;
     font-family: Montserrat, var(--default-font-family);
-    margin-inline: 10%;
-    font-size: 32px;
-    font-weight: 500;
-    line-height: 32px;
-    text-align: center;
-    margin-top:auto;
-    margin-bottom: 5%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+  }
+  .footer a {
+      color: #ffffff;
   }
 
 /* Media Queries */
@@ -403,6 +463,9 @@ body{
   .main-container {
     width: 100%;
   }
+  .contact-me-button{
+    margin-bottom: auto;
+  }
 }
 
 @media (max-width: 768px) {
@@ -418,6 +481,7 @@ body{
 
   .main-container {
     width: 95%;
+    margin: 8% auto 0;
   }
 
   .content-container {
@@ -463,6 +527,7 @@ body{
   .contact-me-button{
     margin-top: 30%;
   }
+
 }
 
 @media (max-width: 480px) {
@@ -476,13 +541,16 @@ body{
   .website-title {
     font-size: 10px;
     margin-bottom: 5%;
+    padding-left: 100px;
   }
   .right-frame{
     height: 50vh;
   }
 
+
   .main-container {
     width: 90%;
+    margin: 12% auto 0;
   }
   .prev, .next {
     padding: 10px;
