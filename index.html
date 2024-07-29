@@ -44,6 +44,7 @@
           <button class="contact-me-button">Contact Me</button>
         </div>
       </div>
+      <!-- about me container -->
       <div class="about-me-container">
           <div class="about-me-title"><span>Gena Hunsaker</span></div>
           <div class="about-me-content-stack">
@@ -53,12 +54,26 @@
             </div>
           </div>
       </div>
+      <!-- FAQ Section -->
+      <div class="faq-content">
+        <div class="faq-item">
+          <div class="faq-question"><span>What is your return policy?</span></div>
+          <div class="faq-answer"><span>Our return policy allows you to return items within 30 days of purchase. Items must be in their original condition and packaging.</span></div>
+        </div>
+      
+        <div class="faq-item">
+          <div class="faq-question"><span>How long does shipping take?</span></div>
+          <div class="faq-answer"><span>Shipping usually takes 5-7 business days. We offer expedited shipping options at checkout.</span></div>
+        </div>
+      
+        <div class="faq-item">
+          <div class="faq-question"><span>Do you offer international shipping?</span></div>
+          <div class="faq-answer"><span>Yes, we ship to many countries worldwide. Shipping costs and times vary by location.</span></div>
+        </div>
+      </div>
     </div>
 
-
-
-
-    <script>
+<script>
       let currentIndex = 0;
 
     function showSlide(index) {
@@ -80,5 +95,17 @@
 
     // Initialize the first slide
     showSlide(currentIndex);
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const questions = document.querySelectorAll('.faq-question');
+      
+      questions.forEach(question => {
+        question.addEventListener('click', function() {
+          const answer = this.nextElementSibling;
+          
+          answer.classList.toggle('show');
+        });
+      });
+    });
     </script>
   </body>
