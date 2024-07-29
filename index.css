@@ -35,34 +35,53 @@ body{
 /* topbanner */
 .navbar {
   display: flex;
-  justify-content: center; /* Space out items for a more professional look */
+  justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 10px 20px; /* Add padding for better spacing */
-  background-color: #334e4e; /* Darker background for a more professional look */
-  position: fixed; /* Make navbar fixed */
-  top: 0; /* Stick to the top */
-  left: 0; /* Align to the left edge */
-  z-index: 1000; /* Ensure it stays above other content */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+  padding: 10px 20px; 
+  background-color: #334e4e; 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  z-index: 1000; 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
 }
 .website-title {
   padding-right: 15%;
   font-family: Montserrat, var(--default-font-family);
-  font-size: 30px; /* Adjust font size for better balance */
+  font-size: 30px; 
   font-weight: 700;
-  color: #ffffff; /* White color for contrast */
-  text-transform: uppercase; /* Uppercase for a professional look */
-  letter-spacing: 1px; /* Add letter spacing for readability */
-  
+  color: #ffffff; 
+  text-transform: uppercase; 
+  letter-spacing: 1px; 
+}
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+.nav-links {
+  display: flex;
+  gap: 15px;
 }
 .nav-item {
   font-family: Montserrat, var(--default-font-family);
-  font-size: 18px; /* Adjust font size */
-  color: #ffffff; /* White color for contrast */
-  padding: 10px 15px; /* Add padding for better spacing */
-  text-decoration: none; /* Remove underline */
-  transition: color 0.3s, background-color 0.3s; /* Smooth transition effects */
+  font-size: 18px; 
+  color: #ffffff; 
+  padding: 10px 15px; 
+  text-decoration: none;
+  transition: color 0.3s, background-color 0.3s;
+}
+/* Dropdown Menu Styles */
+.nav-links {
+  display: flex;
+}
+
+.nav-links.active {
+  display: block;
 }
 .nav-item:hover {
   color: #ffcc00; /* Yellow color on hover */
@@ -74,7 +93,7 @@ body{
   padding-right: 10%;
   display: flex;
   align-items: center;
-  gap: 20px; /* Add gap between nav items */
+  gap: 20px; 
 }
 .main-container {
   width: 85%;
@@ -90,16 +109,16 @@ body{
   display: flex;
   flex-direction: row;
   width: 100%;
-  align-items: stretch; /* Ensure both items stretch to the container's height */
+  align-items: stretch; 
 }
 
 /* Slider styles */
 .slider {
-  flex: 1.5; /* Adjusted for more emphasis on slider */
+  flex: 1.5;
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly more pronounced shadow */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
 }
 
 .slides {
@@ -108,7 +127,7 @@ body{
 }
 
 .slide {
-  flex: 1 0 100%; /* Ensures slides take full width of the slider */
+  flex: 1 0 100%; 
   box-sizing: border-box;
 }
 
@@ -116,7 +135,7 @@ body{
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 10px; /* Match the slider's border-radius */
+  border-radius: 10px; 
 }
 
 /* Navigation buttons */
@@ -124,10 +143,10 @@ body{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.6); /* Slightly lighter background for visibility */
+  background-color: rgba(0, 0, 0, 0.6); 
   color: #ffffff;
   border: none;
-  padding: 15px; /* Reduced padding for a more compact button */
+  padding: 15px; 
   cursor: pointer;
   border-radius: 50%;
   z-index: 100;
@@ -144,7 +163,7 @@ body{
 }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+  background-color: rgba(0, 0, 0, 0.8);
   transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
@@ -155,16 +174,16 @@ body{
 
 /* Right frame styles */
 .right-frame {
-  flex: 1; /* Adjust this value to control the width ratio */
+  flex: 1; 
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Center content vertically */
-  background-color: #2a4242; /* Darker background for contrast */
+  justify-content: center; 
+  background-color: #2a4242; 
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly more pronounced shadow */
-  padding: 20px; /* Added padding for better spacing */
-  color: #ffffff; /* White text color for contrast */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+  padding: 20px; 
+  color: #ffffff; 
 }
 
 /* Quote text styling */
@@ -180,22 +199,22 @@ body{
 /* Author text styling */
 .author {
   font-family: Poppins, var(--default-font-family);
-  font-size: 16px; /* Increased font size for readability */
-  font-weight: 400; /* Slightly lighter weight for differentiation */
-  line-height: 1.5; /* Improved line height for readability */
+  font-size: 16px;
+  font-weight: 400; 
+  line-height: 1.5; 
   text-align: center;
-  margin-bottom: 20px; /* Space below author */
+  margin-bottom: 20px; 
 }
 
 /* Additional text styling in right frame */
 .right-frame-text {
   font-family: Montserrat, var(--default-font-family);
   font-size: 24px;
-  font-weight: 400; /* Slightly lighter weight for body text */
-  line-height: 1.5; /* Improved line height for readability */
+  font-weight: 400; 
+  line-height: 1.5; 
   text-align: center;
-  margin: 0 auto 20px; /* Center text and add space below */
-  max-width: 80%; /* Limit width for better readability */
+  margin: 0 auto 20px; 
+  max-width: 80%; 
   margin-top:auto;
   margin-top: 50%;
 }
@@ -215,7 +234,7 @@ body{
   text-decoration: none;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
-  margin-top: 10%; /* Adjusted margin for consistency */
+  margin-top: 10%; 
 }
 
 .contact-me-button:hover {
@@ -233,25 +252,25 @@ body{
   max-width: 100;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center items horizontally */
-  background-color: #617c7c; /* Soft teal background */
-  padding: 2% 5%; /* Added padding for better spacing */
-  box-sizing: border-box; /* Ensure padding and borders are included in element's total width and height */
-  margin: 0 auto; /* Center container horizontally */
+  align-items: center; 
+  background-color: #617c7c; 
+  padding: 2% 5%; 
+  box-sizing: border-box;
+  margin: 0 auto; 
 }
 
 /* Title of the About Me section */
 .about-me-title {
-  color: #ffffff; /* White text for better contrast */
+  color: #ffffff;
   font-family: Montserrat, var(--default-font-family);
   font-size: 48px;
   font-weight: 500;
-  line-height: 1.2; /* Improved line height for better readability */
+  line-height: 1.2; 
   text-align: center;
-  background-color: #2a4242; /* Darker background for the title */
-  padding: 20px; /* Consistent padding */
-  border-radius: 8px; /* Rounded corners for a more modern look */
-  margin-bottom: 20px; /* Space below title */
+  background-color: #2a4242; 
+  padding: 20px; 
+  border-radius: 8px;
+  margin-bottom: 20px; 
 }
 
 /* Container for content inside About Me section */
@@ -260,16 +279,16 @@ body{
   flex-direction: row;
   align-items: stretch;
   width: 100%;
-  gap: 20px; /* Added gap between items for better spacing */
+  gap: 20px; 
 }
 
 /* Container for the picture */
 .about-me-picture {
-  flex: 1; /* Take up available space */
+  flex: 1; 
   position: relative;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly darker shadow for a more pronounced effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
 /* Styling for images within the picture container */
@@ -287,21 +306,21 @@ body{
   font-size: 50px;
   font-weight: 500;
   text-align: center;
-  margin-top: 10%; /* Top margin for spacing */
-  margin-bottom: 20px; /* Bottom margin for spacing */
+  margin-top: 10%;
+  margin-bottom: 20px; 
 }
 
 /* Body text within the content stack */
 .about-me-text {
-  color: #c7c7c7d2; /* Light grey text for better readability */
+  color: #c7c7c7d2; 
   font-family: Montserrat, var(--default-font-family);
   font-size: 32px;
   font-weight: 500;
-  line-height: 1.5; /* Improved line height for better readability */
+  line-height: 1.5; 
   text-align: center;
-  margin: 0 auto; /* Center text horizontally */
-  max-width: 800px; /* Limit the width for better readability */
-  padding: 0 10%; /* Add horizontal padding for spacing */
+  margin: 0 auto; 
+  max-width: 800px; 
+  padding: 0 10%; 
 }
 
 
@@ -449,37 +468,82 @@ body{
 
 /* Media Queries */
 @media (max-width: 1024px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #334e4e;
+    position: absolute;
+    top: 60px; 
+    left: 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
   .nav-item {
-    font-size: 22px;
-    padding: 8px 16px;
-    height: auto;
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #2a4242; 
   }
   .about-me-content-stack{
     flex-flow: column wrap;
-    flex-direction: column; /* Stack the elements vertically */
+    flex-direction: column; 
     height: auto;
   }
 
   .website-title {
-    font-size: 28px;
+    font-size: 24px;
     padding-left: 100px;
+    margin-left: 10%;
   }
 
   .main-container {
     width: 100%;
   }
+  
+  .right-frame-text{
+    margin-top: 2%;
+  }
 
   .contact-me-button{
     margin-bottom: auto;
+  }
+  .main-container{
+    margin-top: 9%;
   }
 
 }
 
 @media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #334e4e;
+    position: absolute;
+    top: 60px; 
+    left: 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
   .nav-item {
-    font-size: 10px;
-    padding: 6px 10x;
-    height: auto;
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid #2a4242;
   }
 
 
@@ -494,29 +558,29 @@ body{
 
   .content-container {
     flex-flow: column wrap;
-    flex-direction: column; /* Stack the elements vertically */
+    flex-direction: column;
     height: auto;
   }
   .about-me-content-stack{
     flex-flow: column wrap;
-    flex-direction: column; /* Stack the elements vertically */
+    flex-direction: column; 
     height: auto;
   }
   .contact-me-content-stack{
     flex-flow: column wrap;
-    flex-direction: column; /* Stack the elements vertically */
+    flex-direction: column; 
     height: auto;
   }
   .slider, .right-frame {
-    width: 100%; /* Full width when stacked */
-    max-width: none; /* Remove max-width restriction */
+    width: 100%; 
+    max-width: none; 
   }
   .right-frame{
     height: 50vh;
   }
 
   .slider, .right-frame {
-    width: 100%; /* Take full width when stacked */
+    width: 100%; 
     max-width: none;
   }
   .right-frame{
@@ -536,7 +600,7 @@ body{
     margin-top: 30%;
   }
   .about-me-container .about-me {
-    font-size: 100px; /* Adjust this value as needed */
+    font-size: 100px; 
   }
 
 }
