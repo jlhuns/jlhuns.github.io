@@ -250,7 +250,7 @@ body{
   .faq-content {
     max-width: 100%;
     margin: 0 auto;
-    /* padding: 20px; */
+    width: 100%;
   }
 
   .faq-title {
@@ -262,7 +262,17 @@ body{
     text-align: center;
     margin-top:auto;
     padding: 1%;
-    background-color: #3a3d51;
+    background-color: #2a4242;
+    margin-top: 2%;
+    margin-bottom: 1%;
+  }
+  .faq-subtitle {
+    color: #ffffff;
+    font-family: Montserrat, var(--default-font-family);
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
   }
   
   .faq-item {
@@ -273,7 +283,7 @@ body{
     width: 100%;
     padding: 1%;
     text-align: left;
-    background-color: #2a4242;
+    background-color: #225e5e;
     border: none;
     cursor: pointer;
     font-size: 32px;
