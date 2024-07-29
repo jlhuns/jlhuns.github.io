@@ -4,6 +4,24 @@
       "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
       "Source Han Sans CN", sans-serif;
   }
+  a {
+    color: #ffffff; /* White color for dark backgrounds */
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    color: #ffcc00; /* Yellow color on hover */
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: #cccccc; /* Light grey for visited links */
+  }
+  
+  a:active {
+    color: #ff0000; /* Red when clicked */
+  }
 body{
   margin: 0;
   display: flex;
@@ -269,10 +287,11 @@ body{
   .faq-subtitle {
     color: #ffffff;
     font-family: Montserrat, var(--default-font-family);
-    font-size: 40px;
+    font-size: 26px;
     font-weight: 500;
     line-height: 32px;
     text-align: center;
+    margin-top: 1%;
   }
   
   .faq-item {
