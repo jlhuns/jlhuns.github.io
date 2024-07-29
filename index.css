@@ -454,25 +454,34 @@ body{
     padding: 8px 16px;
     height: auto;
   }
+  .about-me-content-stack{
+    flex-flow: column wrap;
+    flex-direction: column; /* Stack the elements vertically */
+    height: auto;
+  }
 
   .website-title {
     font-size: 28px;
+    padding-left: 100px;
   }
 
   .main-container {
     width: 100%;
   }
+
   .contact-me-button{
     margin-bottom: auto;
   }
+
 }
 
 @media (max-width: 768px) {
   .nav-item {
     font-size: 10px;
-    padding: 6px, 10x;
+    padding: 6px 10x;
     height: auto;
   }
+
 
   .website-title {
     font-size: 15px;
@@ -526,6 +535,9 @@ body{
   .contact-me-button{
     margin-top: 30%;
   }
+  .about-me-container .about-me {
+    font-size: 100px; /* Adjust this value as needed */
+  }
 
 }
 
@@ -560,4 +572,5 @@ body{
   .author{
     font-size: 8px;;
   }
+
 }
