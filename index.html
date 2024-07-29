@@ -15,203 +15,70 @@
     </style>
   </head>
   <body>
+        <!-- NAV BAR -->
+        <div class="navbar">
+            <div class="website-title"> <span> Gena Hunsaker Counseling</span></div>
+            <div class="nav-item about-me">About Me</div>
+            <div class="nav-item faq">FAQ</div>
+            <div class="nav-item location">Location</div>
+            <div class="nav-item contact-me">Contact Me</div>
+        </div>
     <div class="main-container">
-      <!-- Navigation Links -->
-      <div class="flex-row-f">
-        <span class="gena-hunsaker-counseling">Gena Hunsaker Counseling</span>
-        <a href="#about-me">
-          <span class="about-me">About Me</span>
-        </a>
-        <a href="#faq">
-          <span class="faq">FAQ</span>
-        </a>
-        <a href="#location">
-          <span class="locationTitle">Location</span>
-        </a>
-        <a href="#contact-me">
-          <span class="contact-me">Contact Me</span>
-        </a>
-      </div>
-
-        <!-- Banner and Photo Gallery -->
-        <div class="frame">
-          <div class="banner-right-card">
-            <div class="banner-right-frame">
-              <span class="text">
-                Personalized counseling for career and life transitions
-              </span>
-              <div class="contact-me-button">
-              <a href="#contact-me">
-                <span class="text-1">Contact Me</span>
-              </a>
-              </div>
-              <span class="title">“We’re all just walking each other home”</span>
-              <span class="quote-author">Ram Dass</span>
+        <!-- slider -->
+      <div class="content-container">
+          <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="assets/images/walkinghome.png"></div>
+                <div class="slide"><img src="assets/images/building.png"></div>
+                <div class="slide"><img src="assets/images/waitingroom.png"></div>
             </div>
-            <div class="right-frame-black-rectangle"></div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <!-- rightframe -->
+        <div class="right-frame">
+          <div class="quote"><span> “We’re all just walking each other home”</span>
+            <div class="author"><span> Ram Dass</span></div>
           </div>
-            <div id = "slider">
-              <ul id="slideWrap"> 
-                  <li><img src="assets/images/walkinghome.png" alt=""></li>
-                  <li><img src="assets/images/building2.png" alt=""></li>
-                  <li><img src="assets/images/office.png" alt=""></li>
-                  <li><img src="assets/images/waitingroom.png" alt=""></li>
-                  <li><img src="assets/images/Names.png" alt=""></li>
-              </ul>
-              <a id="prev" href="#photos">&#8810;</a>
-              <a id="next" href="#photos">&#8811;</a>
+          <div class="right-frame-text"> <span>Personalized counseling for career and life transitions</span></div>
+          <button class="contact-me-button">Contact Me</button>
+        </div>
+      </div>
+      <div class="about-me-container">
+          <div class="about-me-title"><span>Gena Hunsaker</span></div>
+          <div class="about-me-content-stack">
+            <div class="about-me-picture">  <img src="assets/images/gena3.png"></div>
+            <div class="about-me-text-title"><span>About Me</span>
+              <div class="about-me-text"><span> EMDR, trauma informed therapist. I help individuals understand the human experience, their human experience, in a powerful holistic way. I believe that healing is experienced by understanding ourselves, beyond the identities, expectations, and messages we have assumed, often unconsciously, that have shaped how we experience ourselves and our world. I help individuals relieve suffering and find new ways to experience life and have a more fulfilled human experience.</span></div>
+            </div>
           </div>
+      </div>
     </div>
 
-      <!-- About Me Section -->
-      <span class="about-me-title" id="about-me">Gena Hunsaker</span>
-      <div class="flex-row-de">
-        <div class="gena-hunsaker-pic"></div>
-        <span class="about-me-title-3">About Me</span>
-        <span class="about-me-text">
-          EMDR, trauma informed therapist. I help individuals understand the
-          human experience, their human experience, in a powerful holistic way.
-          I believe that healing is experienced by understanding ourselves,
-          beyond the identities, expectations, and messages we have assumed,
-          often unconsciously, that have shaped how we experience ourselves and
-          our world. I help individuals relieve suffering and find new ways to
-          experience life and have a more fulfilled human experience.
-        </span>
-      </div>
 
-      <!-- FAQ Section -->
-      <div class="bg">
-        <span class="faq-title" id="faq">Frequently Asked Questions</span>
-        <span class="faq-desc">
-          Please reach me at genahcounselingllc@gmail.com if you cannot find an
-          answer to your question or learn more at my Physiology Today profile.
-        </span>
-        <span class="question">What is Gena Hunsaker Counseling?</span>
-        <span class="book-appointment">
-          How can I book an appointment with Gena Hunsaker Counseling?
-        </span>
-        <span class="book-appointment-4">
-          You can book an appointment with me by calling (208) 213-2753 or
-          emailing genahcounselingllc@gmail.com.
-        </span>
-        <div class="line"></div>
-        <span class="counseling-services">
-          What types of counseling services does Gena Hunsaker Counseling offer?
-        </span>
-        <span class="counseling-services-5">
-          I offer a variety of counseling services for anyone of any age,
-          including:<br />
-          - Acceptance and Commitment (ACT)<br />
-         - Culturally Sensitive<br />
-         - Eclectic<br />
-         - EMDR<br />
-         - Emotional Brain Training<br />
-         - Energy Psychology<br />
-         - Humanistic<br />
-         - Integrative<br />
-         - Interpersonal<br />
-         - Motivational Interviewing<br />
-         - Person-Centered<br />
-         - Positive Psychology<br />
-         - Solution Focused Brief (SFBT)<br />
-         - Strength-Based<br />
-         - Trauma Focused
-        </span>
-        <div class="line-6"></div>
-        <span class="accepted-insurances">
-          What insurances are accepted?
-        </span>
-        <span class="accepted-insurances-7">
-          Currently, I accept these insurances:<br />
-          - Aetna<br />
-          - Alliance, Trinity Health<br />
-          - Blue Cross<br />
-          - BlueCross and BlueShield<br />
-          - Bright Path<br />
-          - First Choice Health | FCH<br />
-          - Mountain Health CO-OP<br />
-          - PacificSource<br />
-          - SelectHealth<br />
-          - St Lukes Network<br />
-          - St. Alphonsus Network
-        </span>
-        <div class="line-8"></div>
-        <span class="therapy-approach">
-          At Gena Hunsaker Counseling, I use EMDR therapy, mindfulness, and
-          integrative approaches to provide a welcoming and safe environment. My
-          process is always collaborative and respectful, focused on helping
-          clients navigate life’s challenges and develop new skills for coping.
-          I’m passionate about building a positive, therapeutic relationship to
-          support each individual’s journey toward growth and change.
-        </span>
-        <div class="line-9"></div>
-      </div>
 
-      <!-- Contact and Location Section -->
-      <span class="contact-me-a" id="contact-me">Contact Me</span>
-      <span class="gena-hunsaker-counseling-b">Gena Hunsaker Counseling</span>
-      <span class="address">1005 E Park Blvd, Boise, ID 83712</span>
-      <div class="flex-row-b">
-        <span class="phone">(208) 213-2753</span>
-        <span class="email">genahcounselingllc@gmail.com</span>
-      </div>
-      <div class="google-map-pic" id="location">
-        <span class = "location">Location</span>
-      </div>
 
-      <!-- Footer -->
-      <div class="rectangle">
-        <span class="copyright">
-          Copyright © 2024 Gena Hunsaker Counseling - All Rights Reserved.
-        </span>
-        <div class="line-c"></div>
-      </div>
-    </div>
     <script>
-      var slider = document.getElementById("slider");
-      var sliderWidth = slider.offsetWidth;
-      var slideList = document.getElementById("slideWrap");
-      var count = 1;
-      var items = slideList.querySelectorAll("li").length;
-      var prev = document.getElementById("prev");
-      var next = document.getElementById("next");
+      let currentIndex = 0;
 
-      window.addEventListener('resize', function() {
-        sliderWidth = slider.offsetWidth;
-      });
-      var prevSlide = function() {
-          if(count > 1) {
-            count = count - 2;
-            slideList.style.left = "-" + count * sliderWidth + "px";
-            count++;
-          }
-        
-          else if(count = 1) {
-            count = items - 1;
-            slideList.style.left = "-" + count * sliderWidth + "px";
-            count++;
-          }
-        };
-      var nextSlide = function() {
-      if(count < items) {
-          slideList.style.left = "-" + count * sliderWidth + "px";
-          count++;
-      }
-      else if(count = items) {
-          slideList.style.left = "0px";
-          count = 1;
-      }
-      };
-      next.addEventListener("click", function() {
-          nextSlide();
-        });
-        
-      prev.addEventListener("click", function() {
-      prevSlide();
-      });
-      // setInterval(function() {
-      //     nextSlide()
-      //   }, 5000);
+    function showSlide(index) {
+        const slides = document.querySelectorAll('.slide');
+        if (index >= slides.length) {
+            currentIndex = 0;
+        } else if (index < 0) {
+            currentIndex = slides.length - 1;
+        } else {
+            currentIndex = index;
+        }
+        const offset = -currentIndex * 100;
+        document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
+    }
+
+    function moveSlide(step) {
+        showSlide(currentIndex + step);
+    }
+
+    // Initialize the first slide
+    showSlide(currentIndex);
     </script>
   </body>
-</html>
