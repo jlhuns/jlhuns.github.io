@@ -12,6 +12,34 @@
       html {
         scroll-behavior: smooth;
       }
+      .slides {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+      .slide {
+        min-width: 100%;
+      }
+      .slider-container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+      }
+      .prev, .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+      }
+      .prev {
+        left: 10px;
+      }
+      .next {
+        right: 10px;
+      }
     </style>
   </head>
   <body>
@@ -24,16 +52,17 @@
             <div class="nav-item contact-me">Contact Me</div>
         </div>
     <div class="main-container">
-        <!-- slider -->
+        <!-- First Slider -->
       <div class="content-container">
           <div class="slider">
-            <div class="slides">
+            <div class="slides slider1-slides">
                 <div class="slide"><img src="assets/images/walkinghome.png"></div>
-                <div class="slide"><img src="assets/images/building.png"></div>
                 <div class="slide"><img src="assets/images/waitingroom.png"></div>
+                <div class="slide"><img src="assets/images/office.png"></div>
+                <div class="slide"><img src="assets/images/Names.png"></div>
             </div>
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            <button class="prev" onclick="moveSlide('slider1', -1)">&#10094;</button>
+            <button class="next" onclick="moveSlide('slider1', 1)">&#10095;</button>
         </div>
         <!-- rightframe -->
         <div class="right-frame">
@@ -57,7 +86,7 @@
       <!-- FAQ Section -->
       <div class="faq-content">
         <div class="faq-title"><span>FAQ</span>
-          <div class="faq-subtitle"><span>Please reach me at <a href="mailto:genahcounselingllc@gmail.com">genahcounselingllc@gmail.com</a> if you cannot find an answer to your question or learn more at my </span>
+          <div class="faq-subtitle"><span>Please reach me at <a href="mailto:genahcounselingllc@gmail.com">genahcounselingllc@gmail.com</a> if you cannot find an answer to your question, or learn more at my </span>
             <a href="https://www.psychologytoday.com/us/therapists/gena-hunsaker-boise-id/873472"><span>Physiology Today profile.</span></a></div>
         </div>
         <div class="faq-item">
@@ -72,7 +101,7 @@
       
         <div class="faq-item">
           <div class="faq-question"><span>How can I book an appointment with Gena Hunsaker Counseling?</span></div>
-          <div class="faq-answer"><span>You can book an appointment with me by calling <a href="tel:2082132753">(208) 213-2753 </a>or emailing <a href="mailto:genahcounselingllc@gmail.com">genahcounselingllc@gmail.com</a>.</span></div>
+          <div class="faq-answer"><span>You can book an appointment with me by calling <a href="tel:2082132753">(208) 213-2753</a> or emailing <a href="mailto:genahcounselingllc@gmail.com">genahcounselingllc@gmail.com</a>.</span></div>
         </div>
       
         <div class="faq-item">
@@ -113,41 +142,61 @@
           </span></div>
         </div>
       </div>
+      <div class="contact-me-container">
+        <div class="contact-me-title"><span>Contact Me</span></div> 
+        <div class="contact-me-content-stack">
+          <div class="contact-me-text"><span><br/> Gena Hunsaker Counseling<br/><br/> Address: <br/> <a href="https://www.google.com/maps/place/Gena+Hunsaker+Counseling/@43.6024303,-116.1903662,17z/data=!3m1!4b1!4m6!3m5!1s0x54afb5246b18a145:0xfb63f9bbac3ffdc1!8m2!3d43.6024303!4d-116.1877913!16s%2Fg%2F11q7d5fnk6?entry=ttu" target="_blank">1005 E Park Blvd, Boise, ID 83712</a> <br/>Phone:<br/> <a href="tel:2082132753">(208) 213-2753</a><br/> 
+            <br/>
+            Email:<br/> <a href="mailto:genahcounselingllc@gmail.com">genahcounselingllc@gmail.com</a>
+          </span></div>
+        </div>
+        <div class="contact-me-text-title"><span>Location</span></div>
+        <!-- Second Slider -->
+        <div class="content-container">
+          <div class="slider-container">
+            <div class="slides slider2-slides">
+                <div class="slide"><img src="assets/images/googlephotomap.png"></div>
+                <div class="slide"><img src="assets/images/building2.png"></div>
+            </div>
+            <button class="prev" onclick="moveSlide('slider2', -1)">&#10094;</button>
+            <button class="next" onclick="moveSlide('slider2', 1)">&#10095;</button>
+        </div>
+      </div>
     </div>
+  </div>
 
 <script>
-      let currentIndex = 0;
-
-    function showSlide(index) {
-        const slides = document.querySelectorAll('.slide');
-        if (index >= slides.length) {
-            currentIndex = 0;
-        } else if (index < 0) {
-            currentIndex = slides.length - 1;
-        } else {
-            currentIndex = index;
-        }
-        const offset = -currentIndex * 100;
-        document.querySelector('.slides').style.transform = `translateX(${offset}%)`;
+  function showSlide(slider, index) {
+    const slides = document.querySelectorAll(`.${slider}-slides .slide`);
+    if (index >= slides.length) {
+        index = 0;
+    } else if (index < 0) {
+        index = slides.length - 1;
     }
+    const offset = -index * 100;
+    document.querySelector(`.${slider}-slides`).style.transform = `translateX(${offset}%)`;
+    return index;
+}
 
-    function moveSlide(step) {
-        showSlide(currentIndex + step);
-    }
+function moveSlide(slider, step) {
+    let currentIndex = parseInt(document.querySelector(`.${slider}-slides`).getAttribute('data-index')) || 0;
+    currentIndex = showSlide(slider, currentIndex + step);
+    document.querySelector(`.${slider}-slides`).setAttribute('data-index', currentIndex);
+}
 
-    // Initialize the first slide
-    showSlide(currentIndex);
+// Initialize the first slides
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.slides').forEach(slider => {
+        slider.setAttribute('data-index', 0);
+        showSlide(slider.classList[1], 0);
+    });
 
-    document.addEventListener('DOMContentLoaded', function() {
-      const questions = document.querySelectorAll('.faq-question');
-      
-      questions.forEach(question => {
-        question.addEventListener('click', function() {
-          const answer = this.nextElementSibling;
-          
-          answer.classList.toggle('show');
-        });
+    const questions = document.querySelectorAll('.faq-question');
+    questions.forEach(question => {
+      question.addEventListener('click', function() {
+        const answer = this.nextElementSibling;
+        answer.classList.toggle('show');
       });
     });
-    </script>
-  </body>
+});
+</script>
