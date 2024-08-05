@@ -26,8 +26,8 @@ body{
   margin: 0;
   display: flex;
   justify-content: center;
-  margin-left: 2%;
-  margin-right: 2%;
+  margin-left: 15%;
+  margin-right: -15%;
   height: 100vh;
   background: #f2eeee; 
 }
@@ -305,7 +305,7 @@ body{
   font-size: 50px;
   font-weight: 500;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 0%;
   margin-bottom: 20px; 
 }
 
@@ -317,7 +317,7 @@ body{
   line-height: 1.5; 
   text-align: center;
   margin: 0 auto; 
-  max-width: 800px; 
+  max-width: 5000px; 
   padding: 0 10%; 
 }
 
@@ -515,7 +515,10 @@ body{
     margin-top: 9%;
   }
   .about-me-text{
-    font-size: 50px;
+    font-size: 40px;
+  }
+  .about-me-content-stack{
+    width: 120%;
   }
 
 }
