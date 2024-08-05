@@ -26,8 +26,6 @@ body{
   margin: 0;
   display: flex;
   justify-content: center;
-  margin-left: 15%;
-  margin-right: -15%;
   height: 100vh;
   background: #f2eeee; 
 }
@@ -101,6 +99,7 @@ body{
   position: absolute;
   margin: 4% auto 0;
   color:#f2eeee;
+  width: 75%;
 }
 
 /* Container for slider and right-frame */
