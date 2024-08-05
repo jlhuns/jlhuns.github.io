@@ -463,6 +463,10 @@ body{
       color: #ffffff;
   }
 
+  .email-container{
+    word-break: break-all;
+  }
+
 /* Media Queries */
 @media (max-width: 1024px) {
 
@@ -652,13 +656,6 @@ body{
   .about-me-text-title{
     font-size: 10px;
   }
-  .faq-subtitle{
-    word-break: break-all;
-  }
-  .contact-me-text{
-    word-break: break-all;
-  }
-
 
 
 }
