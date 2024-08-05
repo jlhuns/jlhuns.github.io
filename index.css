@@ -609,7 +609,10 @@ body{
   }
 
   .about-me-text-title{
-    font-size: 20px;
+    font-size: 25px;
+  }
+  .about-me-title{
+    font-size: 30px;
   }
 
 }
@@ -652,9 +655,12 @@ body{
   .author{
     font-size: 12px;
   }
+  .about-me-title{
+    font-size: 20px;
+  }
 
   .about-me-text-title{
-    font-size: 10px;
+    font-size: 15px;
   }
 
 
