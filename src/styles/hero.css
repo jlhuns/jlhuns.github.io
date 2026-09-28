@@ -1,0 +1,59 @@
+.page {
+  padding-top: var(--navbar-height);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 20px;
+  max-width: var(--page-width);
+  margin: 32px auto;
+  padding: 0 var(--gutter);
+}
+
+.hero .slider {
+  aspect-ratio: 4 / 5;
+}
+
+.hero-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 24px;
+  padding: 32px 24px;
+  text-align: center;
+  color: var(--color-text-on-dark);
+  background-color: var(--color-teal-900);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
+}
+
+.quote {
+  margin: 0;
+  font-family: var(--font-display);
+}
+
+.quote p {
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.quote cite {
+  display: block;
+  margin-top: 16px;
+  font-style: normal;
+}
+
+.hero-tagline {
+  max-width: 22ch;
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    margin-top: 16px;
+  }
+}

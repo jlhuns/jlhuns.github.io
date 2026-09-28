@@ -1,234 +1,240 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gena Hunsaker Counseling</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" />
-    <link rel="stylesheet" href="index.css" />
-    <style>
-      /* Smooth scrolling styles */
-      html {
-        scroll-behavior: smooth;
-      }
-      .slides {
-        display: flex;
-        transition: transform 0.5s ease;
-      }
-      .slide {
-        min-width: 100%;
-      }
-      .slider-container {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-      }
-      .prev, .next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        background-color: rgba(0, 0, 0, 0.5);
-        color: white;
-        border: none;
-        cursor: pointer;
-        padding: 10px;
-      }
-      .prev {
-        left: 10px;
-      }
-      .next {
-        right: 10px;
-      }
-    </style>
+    <title>Gena Hunsaker Counseling | EMDR &amp; IFS Therapy in Boise, ID</title>
+    <meta
+      name="description"
+      content="Gena Hunsaker, LCSW — EMDR and IFS, trauma-informed therapy in Boise, Idaho. In-person and telehealth counseling."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500&display=swap"
+    />
+    <script type="module" src="/src/main.js"></script>
   </head>
   <body>
-        <!-- NAV BAR -->
-        <header class="navbar">
-          <div class="website-title">Gena Hunsaker Counseling</div>
-          <nav class="nav-container">
-            <button class="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
-              <div class="nav-links">
-                <a href="#" class="nav-item">Home</a>
-                <a href="#about-me" class="nav-item">About</a>
-                <a href="#faq" class="nav-item">FAQ</a>
-                <a href="#contact-me" class="nav-item">Contact</a>
+    <header class="navbar">
+      <a href="#top" class="site-title">Gena Hunsaker Counseling</a>
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-controls="nav-links"
+        aria-expanded="false"
+      >
+        &#9776;
+      </button>
+      <nav id="nav-links" class="nav-links" aria-label="Main">
+        <a href="#top" class="nav-item">Home</a>
+        <a href="#about-me" class="nav-item">About</a>
+        <a href="#faq" class="nav-item">FAQ</a>
+        <a href="#contact-me" class="nav-item">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top" class="page">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="slider" data-slider aria-roledescription="carousel" aria-label="Office photos">
+          <div class="slides" data-slides>
+            <img
+              class="slide"
+              src="/src/assets/images/walking-home.webp"
+              alt="Two children walking arm in arm down a path"
+            />
+            <img class="slide" src="/src/assets/images/gena.webp" alt="Gena Hunsaker smiling" loading="lazy" />
+            <img
+              class="slide"
+              src="/src/assets/images/waiting-room.webp"
+              alt="The office waiting room"
+              loading="lazy"
+            />
+            <img
+              class="slide"
+              src="/src/assets/images/office.webp"
+              alt="Counseling office with orange armchairs"
+              loading="lazy"
+            />
+            <img
+              class="slide"
+              src="/src/assets/images/office-directory.webp"
+              alt="Office directory sign listing Gena Hunsaker, LCSW"
+              loading="lazy"
+            />
+          </div>
+          <button class="slider-button prev" type="button" data-slider-prev aria-label="Previous photo">
+            &#10094;
+          </button>
+          <button class="slider-button next" type="button" data-slider-next aria-label="Next photo">&#10095;</button>
+        </div>
+
+        <div class="hero-panel">
+          <blockquote class="quote">
+            <p>“We’re all just walking each other home”</p>
+            <cite>Ram Dass</cite>
+          </blockquote>
+          <p class="hero-tagline">Counseling for the human experience through telehealth or in-person</p>
+          <a class="button" href="#contact-me">Contact Me</a>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="section about" id="about-me">
+        <h2 class="section-title">About Me</h2>
+        <h3 class="about-name">Gena Hunsaker</h3>
+        <p class="about-text">
+          EMDR and IFS, trauma-informed therapist. I help individuals understand the human experience, their human
+          experience, in a powerful holistic way. I believe that healing is experienced by understanding ourselves,
+          beyond the identities, expectations, and messages we have assumed, often unconsciously, that have shaped how
+          we experience ourselves and our world. I help individuals relieve suffering and find new ways to experience
+          life and have a more fulfilled human experience.
+        </p>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section faq" id="faq">
+        <h2 class="section-title">FAQ</h2>
+        <p class="faq-intro">
+          Please reach me at
+          <a class="email" href="mailto:genahcounselingllc@gmail.com">genahcounselingllc@gmail.com</a> if you cannot
+          find an answer to your question. You can also find me on
+          <a
+            href="https://www.psychologytoday.com/us/therapists/gena-hunsaker-boise-id/873472"
+            target="_blank"
+            rel="noopener"
+            >Psychology Today</a
+          >.
+        </p>
+
+        <details class="faq-item">
+          <summary>What is Gena Hunsaker Counseling?</summary>
+          <div class="faq-answer">
+            <p>
+              At Gena Hunsaker Counseling, I use EMDR and IFS therapy, mindfulness, and integrative approaches to
+              provide a welcoming and safe environment. My process is always collaborative and respectful, focused on
+              helping clients navigate life’s challenges and develop new skills for coping. I’m passionate about
+              building a positive, therapeutic relationship to support each individual’s journey toward growth and
+              change.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>How can I book an appointment with Gena Hunsaker?</summary>
+          <div class="faq-answer">
+            <p>
+              You can book an appointment with me by calling <a href="tel:+12086141602">(208) 614-1602</a> or emailing
+              <a class="email" href="mailto:genahcounselingllc@gmail.com">genahcounselingllc@gmail.com</a>.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>What types of counseling services does Gena Hunsaker Counseling offer?</summary>
+          <div class="faq-answer">
+            <p>I offer a variety of counseling services for anyone of any age, including:</p>
+            <ul class="columns">
+              <li>Acceptance and Commitment (ACT)</li>
+              <li>Culturally Sensitive</li>
+              <li>Eclectic</li>
+              <li>EMDR</li>
+              <li>Emotional Brain Training</li>
+              <li>Energy Psychology</li>
+              <li>Humanistic</li>
+              <li>Integrative</li>
+              <li>Internal Family Systems (IFS)</li>
+              <li>Interpersonal</li>
+              <li>Motivational Interviewing</li>
+              <li>Person-Centered</li>
+              <li>Positive Psychology</li>
+              <li>Solution Focused Brief (SFBT)</li>
+              <li>Strength-Based</li>
+              <li>Trauma Focused</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>What insurances are accepted?</summary>
+          <div class="faq-answer">
+            <p>Currently, I accept these insurances:</p>
+            <ul class="columns">
+              <li>Aetna</li>
+              <li>Alliance, Trinity Health</li>
+              <li>Blue Cross</li>
+              <li>BlueCross and BlueShield</li>
+              <li>Bright Path</li>
+              <li>First Choice Health | FCH</li>
+              <li>Mountain Health CO-OP</li>
+              <li>PacificSource</li>
+              <li>SelectHealth</li>
+              <li>St Lukes Network</li>
+              <li>St. Alphonsus Network</li>
+            </ul>
+          </div>
+        </details>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact" id="contact-me">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-layout">
+          <address class="contact-details">
+            <strong class="contact-business">Gena Hunsaker Counseling</strong>
+            <dl>
+              <dt>Address</dt>
+              <dd>
+                <a
+                  href="https://www.google.com/maps/place/Gena+Hunsaker+Counseling/@43.6024303,-116.1903662,17z/data=!3m1!4b1!4m6!3m5!1s0x54afb5246b18a145:0xfb63f9bbac3ffdc1!8m2!3d43.6024303!4d-116.1877913!16s%2Fg%2F11q7d5fnk6?entry=ttu"
+                  target="_blank"
+                  rel="noopener"
+                  >1005 E Park Blvd, Boise, ID 83712</a
+                >
+              </dd>
+              <dt>Phone</dt>
+              <dd><a href="tel:+12086141602">(208) 614-1602</a></dd>
+              <dt>Email</dt>
+              <dd><a class="email" href="mailto:genahcounselingllc@gmail.com">genahcounselingllc@gmail.com</a></dd>
+              <dt>Fax</dt>
+              <dd>(208) 593-4586</dd>
+            </dl>
+          </address>
+
+          <div class="contact-location">
+            <h3 class="contact-subtitle">Location</h3>
+            <div class="slider" data-slider aria-roledescription="carousel" aria-label="Office location">
+              <div class="slides" data-slides>
+                <img
+                  class="slide"
+                  src="/src/assets/images/map.webp"
+                  alt="Map showing the office near the Boise River"
+                  loading="lazy"
+                />
+                <img
+                  class="slide"
+                  src="/src/assets/images/building.webp"
+                  alt="Office building at 1005 E Park Blvd"
+                  loading="lazy"
+                />
               </div>
+              <button class="slider-button prev" type="button" data-slider-prev aria-label="Previous photo">
+                &#10094;
+              </button>
+              <button class="slider-button next" type="button" data-slider-next aria-label="Next photo">
+                &#10095;
+              </button>
             </div>
-          </nav>
-      </header>
-    <div class="main-container">
-        <!-- First Slider -->
-      <div class="content-container">
-          <div class="slider">
-            <div class="slides slider1-slides">
-                <div class="slide"><img src="assets/images/walkinghome.png"></div>
-                <div class="slide"><img src="assets/images/gena3.png"></div>
-                <div class="slide"><img src="assets/images/waitingroom.png"></div>
-                <div class="slide"><img src="assets/images/office.png"></div>
-                <div class="slide"><img src="assets/images/Names.png"></div>
-            </div>
-            <button class="prev" onclick="moveSlide('slider1', -1)">&#10094;</button>
-            <button class="next" onclick="moveSlide('slider1', 1)">&#10095;</button>
-        </div>
-        <!-- rightframe -->
-        <div class="right-frame">
-          <div class="quote"><span> “We’re all just walking each other home”</span>
-            <div class="author"><span> Ram Dass</span></div>
           </div>
-          <div class="right-frame-text"> <span>Counseling for the human experience through tele-health or in-person</span>
-          
         </div>
-        <button class="contact-me-button" onclick="scrollToContactMe()">Contact Me</button>
-        </div>
-      </div>
-      <!-- about me container -->
-      <div class="about-me-container" id="about-me">
-          <div class="about-me-title"><span>About Me</span></div>
-          <div class="about-me-content-stack">
-            <div class="about-me-text-title"><h3>Gena Hunsaker</span> </h3>
-              <div class="about-me-text"><span> EMDR, trauma informed therapist. I help individuals understand the human experience, their human experience, in a powerful holistic way. I believe that healing is experienced by understanding ourselves, beyond the identities, expectations, and messages we have assumed, often unconsciously, that have shaped how we experience ourselves and our world. I help individuals relieve suffering and find new ways to experience life and have a more fulfilled human experience.</span></div>
-            </div>  
-          </div>
-      </div>
-      <!-- FAQ Section -->
-      <div class="faq-content" id="faq">
-        <div class="faq-title"><span>FAQ</span>
-          <div class="faq-subtitle"><span>  Please reach me at <span class="email-container"><a href="mailto:genahcounselingllc@gmail.com">genahcounselingllc@gmail.com</a></span> if you cannot find an answer to your question. You can also find me on </span>
-            <a href="https://www.psychologytoday.com/us/therapists/gena-hunsaker-boise-id/873472"><span>Physiology Today.</span></a></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question"><span>What is Gena Hunsaker Counseling?</span></div>
-          <div class="faq-answer"><span>At Gena Hunsaker Counseling, I use EMDR therapy, mindfulness, and
-            integrative approaches to provide a welcoming and safe environment. My
-            process is always collaborative and respectful, focused on helping
-            clients navigate life’s challenges and develop new skills for coping.
-            I’m passionate about building a positive, therapeutic relationship to
-            support each individual’s journey toward growth and change.</span></div>
-        </div>
-      
-        <div class="faq-item">
-          <div class="faq-question"><span>How can I book an appointment with Gena Hunsaker?</span></div>
-          <div class="faq-answer"><span>You can book an appointment with me by calling <a href="tel:2082132753">(208) 614-1602</a> or emailing <a href="mailto:genahcounselingllc@gmail.com">genahcounselingllc@gmail.com</a>.</span></div>
-        </div>
-      
-        <div class="faq-item">
-          <div class="faq-question"><span>What types of counseling services does Gena Hunsaker Counseling offer?</span></div>
-          <div class="faq-answer"><span>I offer a variety of counseling services for anyone of any age,
-            including:<br />
-           - Acceptance and Commitment (ACT)<br />
-           - Culturally Sensitive<br />
-           - Eclectic<br />
-           - EMDR<br />
-           - Emotional Brain Training<br />
-           - Energy Psychology<br />
-           - Humanistic<br />
-           - Integrative<br />
-           - Interpersonal<br />
-           - Motivational Interviewing<br />
-           - Person-Centered<br />
-           - Positive Psychology<br />
-           - Solution Focused Brief (SFBT)<br />
-           - Strength-Based<br />
-           - Trauma Focused
-          </span></div>
-        </div>
-        <div class="faq-item">
-          <div class="faq-question"><span>What insurances are accepted?</span></div>
-          <div class="faq-answer"><span>Currently, I accept these insurances:<br />
-            - Aetna<br />
-            - Alliance, Trinity Health<br />
-            - Blue Cross<br />
-            - BlueCross and BlueShield<br />
-            - Bright Path<br />
-            - First Choice Health | FCH<br />
-            - Mountain Health CO-OP<br />
-            - PacificSource<br />
-            - SelectHealth<br />
-            - St Lukes Network<br />
-            - St. Alphonsus Network
-          </span></div>
-        </div>
-      </div>
-      <div class="contact-me-container" id="contact-me">
-        <div class="contact-me-title"><span>Contact Me</span></div> 
-        <div class="contact-me-content-stack">
-            <div class="contact-me-text">
-                <span>
-                    <strong>Gena Hunsaker Counseling</strong><br/><br/> 
-                    <strong>Address:</strong><br/> 
-                    <a href="https://www.google.com/maps/place/Gena+Hunsaker+Counseling/@43.6024303,-116.1903662,17z/data=!3m1!4b1!4m6!3m5!1s0x54afb5246b18a145:0xfb63f9bbac3ffdc1!8m2!3d43.6024303!4d-116.1877913!16s%2Fg%2F11q7d5fnk6?entry=ttu" target="_blank">1005 E Park Blvd, Boise, ID 83712</a> <br/><br/>
-                    <strong>Phone:</strong><br/> 
-                    <a href="tel:2082132753">(208) 614-1602</a><br/><br/> 
-                    <span class="email-container">
-                      <strong>Email:</strong><br/> 
-                      <a href="mailto:genahcounselingllc@gmail.com">genahcounselingllc@gmail.com</a><br/> <br/> </span>
-                    <strong>Fax:</strong><br/> 
-                    <a href="tel:2082132753">(208) 593-4586</a><br/><br/> 
-                </span>
-            </div>
-        </div>
-        <div class="contact-me-text-title"><span>Location</span></div> 
-        <!-- Second Slider -->
-        <div class="content-container">
-          <div class="slider-container">
-            <div class="slides slider2-slides">
-                <div class="slide"><img src="assets/images/googlephotomap.png"></div>
-                <div class="slide"><img src="assets/images/building2.png"></div>
-            </div>
-            <button class="prev" onclick="moveSlide('slider2', -1)">&#10094;</button>
-            <button class="next" onclick="moveSlide('slider2', 1)">&#10095;</button>
-        </div>
-      </div>
-    </div>
-      <!-- Footer -->
+      </section>
+    </main>
+
     <footer class="footer">
-      &copy; 2024 Gena Hunsaker Counseling. All rights reserved.
+      &copy; <span data-current-year>2026</span> Gena Hunsaker Counseling. All rights reserved.
     </footer>
-  </div>
-
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-
-    menuToggle.addEventListener('click', function () {
-        navLinks.classList.toggle('active');
-    });
-});
-  function showSlide(slider, index) {
-    const slides = document.querySelectorAll(`.${slider}-slides .slide`);
-    if (index >= slides.length) {
-        index = 0;
-    } else if (index < 0) {
-        index = slides.length - 1;
-    }
-    const offset = -index * 100;
-    document.querySelector(`.${slider}-slides`).style.transform = `translateX(${offset}%)`;
-    return index;
-}
-
-function moveSlide(slider, step) {
-    let currentIndex = parseInt(document.querySelector(`.${slider}-slides`).getAttribute('data-index')) || 0;
-    currentIndex = showSlide(slider, currentIndex + step);
-    document.querySelector(`.${slider}-slides`).setAttribute('data-index', currentIndex);
-}
-function scrollToContactMe() {
-    const contactElement = document.getElementById('contact-me');
-    if (contactElement) {
-      contactElement.scrollIntoView({ behavior: 'smooth' });
-    }
-  }
-
-  // Initialize FAQ section
-  const questions = document.querySelectorAll('.faq-question');
-  questions.forEach(question => {
-      question.addEventListener('click', function() {
-          const answer = this.nextElementSibling;
-          if (answer) {
-              answer.classList.toggle('show');
-          }
-        });
-    });
-</script>
+  </body>
+</html>

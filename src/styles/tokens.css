@@ -1,0 +1,27 @@
+:root {
+  --color-page: #f2eeee;
+  --color-teal-900: #2a4242;
+  --color-teal-800: #334e4e;
+  --color-teal-700: #225e5e;
+  --color-teal-600: #1a4a4a;
+  --color-teal-400: #617c7c;
+  --color-text: #1f2f2f;
+  --color-text-on-dark: #ffffff;
+  --color-text-muted-on-dark: #e2e2e2;
+  --color-accent: #ffcc00;
+  --color-button: #007bff;
+  --color-button-hover: #0056b3;
+  --color-button-active: #004080;
+
+  --font-body:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-heading: Montserrat, var(--font-body);
+  --font-display: Poppins, var(--font-body);
+
+  --radius-sm: 5px;
+  --radius-md: 10px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  --navbar-height: 64px;
+  --page-width: 1200px;
+  --gutter: 16px;
+}
