@@ -1,15 +1,15 @@
 .section {
-  max-width: var(--page-width);
-  margin: 0 auto 40px;
-  padding: 0 var(--gutter);
+  width: var(--content-width);
+  margin: 0 auto var(--section-gap);
 }
 
 .section-title {
   width: fit-content;
   margin: 0 auto 24px;
-  padding: 12px 24px;
+  padding: 12px 28px;
   font-size: clamp(1.75rem, 4vw, 2.5rem);
   font-weight: 600;
+  line-height: 1.2;
   text-align: center;
   color: var(--color-text-on-dark);
   background-color: var(--color-teal-900);
@@ -17,10 +17,10 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* About */
+/* About — full-width band with a centered text column */
 .about {
-  max-width: none;
-  padding: 40px max(var(--gutter), calc((100% - 900px) / 2));
+  width: 100%;
+  padding: var(--section-gap) max(var(--gutter), calc((100% - var(--text-width)) / 2));
   background-color: var(--color-teal-400);
   color: var(--color-text-on-dark);
 }
@@ -28,14 +28,15 @@
 .about-name {
   margin-bottom: 16px;
   font-family: var(--font-display);
-  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-size: clamp(1.375rem, 3vw, 1.75rem);
   font-weight: 500;
   text-align: center;
 }
 
 .about-text {
-  font-size: 1.125rem;
+  font-size: clamp(1.0625rem, 1.5vw, 1.1875rem);
   font-weight: 500;
+  line-height: 1.7;
   text-align: center;
   color: var(--color-text-muted-on-dark);
 }
@@ -43,7 +44,7 @@
 /* FAQ */
 .faq-intro {
   max-width: 60ch;
-  margin: 0 auto 24px;
+  margin: 0 auto 32px;
   font-size: 1.125rem;
   text-align: center;
 }
@@ -56,12 +57,14 @@
   margin-bottom: 16px;
   border-radius: var(--radius-sm);
   overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .faq-item summary {
-  padding: 15px;
-  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  padding: 16px 20px;
+  font-size: clamp(1.125rem, 2.2vw, 1.375rem);
   font-weight: 700;
+  line-height: 1.35;
   color: var(--color-text-on-dark);
   background-color: var(--color-teal-700);
   cursor: pointer;
@@ -73,24 +76,26 @@
 }
 
 .faq-answer {
-  padding: 15px;
-  font-size: 1.125rem;
+  padding: 16px 20px 20px;
+  font-size: 1.0625rem;
+  line-height: 1.6;
   color: var(--color-text-on-dark);
   background-color: var(--color-teal-400);
 }
 
 .faq-answer ul {
   margin: 8px 0 0;
+  padding-left: 1.25em;
 }
 
 .columns {
   columns: 2 240px;
+  column-gap: 32px;
 }
 
 /* Contact */
 .contact {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 32px clamp(16px, 4vw, 40px) 40px;
   color: var(--color-text-muted-on-dark);
   background-color: var(--color-teal-800);
   border-radius: var(--radius-md);
@@ -100,19 +105,28 @@
 .contact-layout {
   display: grid;
   grid-template-columns: 1fr 1.5fr;
-  gap: 32px;
+  gap: 32px 40px;
   align-items: start;
+}
+
+.contact-subtitle {
+  margin-bottom: 16px;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.3;
+  text-align: center;
+  color: var(--color-text-on-dark);
 }
 
 .contact-details {
   font-style: normal;
   font-size: 1.125rem;
+  text-align: center;
 }
 
-.contact-business {
-  display: block;
-  margin-bottom: 16px;
-  color: var(--color-text-on-dark);
+.contact-details dl {
+  margin: 0;
 }
 
 .contact-details dt {
@@ -124,6 +138,10 @@
   margin: 0 0 16px;
 }
 
+.contact-details dd:last-child {
+  margin-bottom: 0;
+}
+
 .contact-details a {
   color: var(--color-accent);
   text-decoration: none;
@@ -133,15 +151,6 @@
   text-decoration: underline;
 }
 
-.contact-subtitle {
-  margin-bottom: 12px;
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 500;
-  text-align: center;
-  color: var(--color-text-on-dark);
-}
-
 .contact .slider {
   aspect-ratio: 3 / 2;
 }
@@ -149,10 +158,5 @@
 @media (max-width: 768px) {
   .contact-layout {
     grid-template-columns: 1fr;
-  }
-
-  .section.contact {
-    margin-left: var(--gutter);
-    margin-right: var(--gutter);
   }
 }

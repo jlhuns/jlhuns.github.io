@@ -8,17 +8,23 @@
   gap: 20px;
   min-height: var(--navbar-height);
   padding: 0 max(var(--gutter), calc((100% - var(--page-width)) / 2));
+  padding-block: 8px;
   background-color: var(--color-teal-800);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .site-title {
-  font-size: clamp(1rem, 2.5vw, 1.875rem);
+  font-size: clamp(0.875rem, 1.6vw + 0.5rem, 1.75rem);
   font-weight: 700;
+  line-height: 1.2;
   color: var(--color-text-on-dark);
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.06em;
   text-decoration: none;
+}
+
+.site-title:hover {
+  color: var(--color-text-on-dark);
 }
 
 .nav-links {
@@ -52,7 +58,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 860px) {
   .menu-toggle {
     display: block;
   }
